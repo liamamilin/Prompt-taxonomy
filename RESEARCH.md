@@ -1,6 +1,6 @@
 # Prompt Taxonomy 调研
 
-调研截至 2026 年 11 月 19 日。本项目主要考察国际 GitHub 上公开的 Prompt、工作流与 Cookbook，再用国际调查和真实会话研究核对使用信号。产物是可复用的任务目录。48 条模板为原创整理。
+调研截至 2026 年 11 月 19 日。本项目主要考察国际 GitHub 上公开的 Prompt、工作流与 Cookbook，再用国际调查和真实会话研究核对使用信号。产物是可复用的任务目录。120 条模板为原创整理。V1.1 增加了 72 条，并将求职、产品、沟通和 AI 工作流列为独立主类。
 
 ## 结论
 
@@ -11,7 +11,7 @@
 
 ## GitHub 对照表
 
-通过 GitHub 搜索和目录查阅选出 14 个仓库。先看通用目录，再看研究代理、文本处理、开发、图像和数据各方向的专题实现。记录主要文件或目录及清楚可辨认的任务证据。表格是定向样本和可复查锚点，未做全站普查。一个仓库里的多个变体只算同一来源；例如 FrankX 明列上游导入，不能和被导入的 Fabric 条目当作两次独立发现。
+通过 GitHub 搜索和目录查阅选出 17 个仓库。先看通用目录，再看研究代理、文本处理、开发、图像和数据各方向的专题实现。记录主要文件或目录及清楚可辨认的任务证据。表格是定向样本和可复查锚点，未做全站普查。一个仓库里的多个变体只算同一来源；例如 FrankX 明列上游导入，不能和被导入的 Fabric 条目当作两次独立发现。
 
 | 样本 | 核查入口 | 观察到的用途或用法 |
 | --- | --- | --- |
@@ -29,23 +29,30 @@
 | Microsoft Promptbase | [guidance_programs](https://github.com/microsoft/promptbase/tree/main/guidance_programs) | 少样本及 JSON 输出示例。属技术演示，用来参考结构约束。 |
 | Generative AI with LangChain | [Writing Assistant](https://github.com/benman1/generative_ai_with_langchain/blob/second_edition/writing_assistant/app.py) | 输入现成草稿并获得具体改进意见，可查应用中真正调用的指令。 |
 | Awesome Nano Banana 2.1 Prompts | [图像与原帖](https://github.com/hanshs474/awesome-nano-banana-2-1-prompts) | 人像、产品及艺术图，参考照片风格变换；可对照生成图与原帖。 |
+| Amplitude Builder Skills | [产品技能](https://github.com/amplitude/builder-skills/tree/main/product-skills/skills) · [分析技能](https://github.com/amplitude/builder-skills/tree/main/analytics-skills/skills) | 从用户访谈与机会发现到需求、优先级、实验和工单分析的完整流程。 |
+| Anthropic Interactive Tutorial | [教程目录](https://github.com/anthropics/prompt-eng-interactive-tutorial) | 对比清晰指令、示例、格式控制和常见错误的练习。 |
+| OpenAI Evals | [仓库与示例](https://github.com/openai/evals) | 用代表输入、参考输出和评分规则记录可复验的模型表现。 |
 
 仓库目录统计的是供给信号，受维护者兴趣、单个产品定位、教程作者取材和交叉转载影响。Star、下载量、仓库大小和文件数量没有用于给模板定频。尤其是代码任务在 GitHub 上天然更显眼。
 
 ### 交叉出现的任务
 
-从每条模板的来源映射展开，按主类统计被引用的不同 GitHub 仓库数。这个统计可用 `docs/catalog.json` 的 `prompts[].sources` 与 `sources` 联表复算。计数表示首版采用了多少个仓库作为此类模板的查找入口，含有关系的来源会重合，因此该列不用于估计用户使用频率。
+从每条模板的来源映射展开，按主类统计被引用的不同 GitHub 仓库数。这个统计可用 `docs/catalog.json` 的 `prompts[].sources` 与 `sources` 联表复算。计数表示当前目录采用了多少个仓库作为此类模板的查找入口，含有关系的来源会重合，因此该列不用于估计用户使用频率。
 
 | 主类 | 有引用的仓库数 | 可跨来源对照的例子 |
 | --- | ---: | --- |
-| 查找与研究 | 7 | STORM 与 GPT Researcher 都把写报告分成提问、检索和整理证据。Gemini Cookbook 单独检验引用和原文是否相符。 |
-| 写作与语言 | 5 | Fabric 和 Writing Assistant 都接收现有草稿再反馈，Claude 和 Microsoft 的文本案例覆盖摘要。 |
-| 学习与辅导 | 3 | Fabric 的闪卡、FrankX 的学习笔记和 prompts.chat 的辅导角色涵盖不同学习阶段。 |
+| 查找与研究 | 8 | STORM 与 GPT Researcher 都把写报告分成提问、检索和整理证据。Gemini Cookbook 单独检验引用和原文是否相符。 |
+| 写作与语言 | 7 | Fabric 和 Writing Assistant 都接收现有草稿再反馈，Claude 和 Microsoft 的文本案例覆盖摘要。 |
+| 学习与辅导 | 5 | Fabric 的闪卡、FrankX 的学习笔记和 prompts.chat 的辅导角色涵盖不同学习阶段。 |
 | 计划与生活 | 4 | Fabric、FrankX 有创意与规划范式；餐食用途另有 ChatGPT 日志细类。 |
-| 办公与协作 | 3 | Fabric 有会议或演示相关工作流，OpenAI Cookbook 有演示文稿案例；会议纪要交付形式另查 Microsoft 和 Google。 |
-| 数据与表格 | 6 | OpenAI 和 Gemini 的实体提取示例都提供明确字段；Claude 的 SQL 示例另外处理表结构和查询。 |
+| 办公与协作 | 4 | Fabric 有会议或演示相关工作流，OpenAI Cookbook 有演示文稿案例；会议纪要交付形式另查 Microsoft 和 Google。 |
+| 数据与表格 | 7 | OpenAI 和 Gemini 的实体提取示例都提供明确字段；Claude 的 SQL 示例另外处理表结构和查询。 |
 | 开发与调试 | 3 | Awesome Copilot 可查代码理解与复现模板；Fabric 和 FrankX 有代码审查案例。测试细节另查 GitHub Docs。 |
-| 创作与多媒体 | 7 | Nano Banana 社区案例与 OpenAI、Gemini 的案例都支持参考图或生成图意图；视频分镜参考 Gemini 与 Veo。 |
+| 创作与多媒体 | 8 | Nano Banana 社区案例与 OpenAI、Gemini 的案例都支持参考图或生成图意图；视频分镜参考 Gemini 与 Veo。 |
+| 求职与职业 | 2 | FrankX 的简历和面试条目帮助发现常见任务，实际流程对照 OpenAI Academy 的求职案例。 |
+| 产品与业务 | 2 | Amplitude 与 Awesome Copilot 对照需求与用户故事，Amplitude 也给出实验和优先级流程。 |
+| 沟通与协商 | 2 | GitHub 样本用于对照处理异议和协作，客户投诉有 Microsoft 的公开案例，难开口的对话等由编辑补齐。 |
+| 提示词与 AI 工作流 | 11 | Anthropic 交互教程、OpenAI Evals 和 Cookbook 对照输入示例、结构约束和效果验证。该数字也包含检索与上下文整理的相关案例。 |
 
 ## 使用数据与各自的分母
 
@@ -59,7 +66,7 @@
 | [Pew Research Center](https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/) | 2026 年发布的美国青少年及父母调查。 | 对照学习和辅导需求；按人群解读。 |
 | [AI2 WildChat](https://arxiv.org/abs/2405.01470) · [LMSYS Chat-1M](https://arxiv.org/abs/2309.11998) | 同意收集的多语种会话、以及模型体验和评估网站的多模型会话。 | 检查公开语料的来源和代表性边界。本项目查阅了论文和数据说明，未下载并重标原始对话。 |
 
-[Google Workspace](https://workspace.google.com/learning/content/gemini-prompt-guide)、[Microsoft Copilot](https://enablement.microsoft.com/en-us/copilot/prompt-gallery/)、[OpenAI Academy](https://academy.openai.com/en/public/clubs/higher-education-05x4z/resources/prompt-pack-for-students)、[GitHub Copilot Cookbook](https://docs.github.com/en/copilot/tutorials/copilot-cookbook)、[Midjourney](https://docs.midjourney.com/hc/en-us/articles/32023408776205-Prompt-Basics/) 和 [Veo](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide) 提供面向终端用户的例子，补充了会议、协作、学习、测试和媒体的实际输入和交付格式。
+[Google Workspace](https://workspace.google.com/learning/content/gemini-prompt-guide)、[Microsoft Copilot](https://enablement.microsoft.com/en-us/copilot/prompt-gallery/)、[OpenAI Academy](https://academy.openai.com/en/public/clubs/higher-education-05x4z/resources/prompt-pack-for-students)、[GitHub Copilot Cookbook](https://docs.github.com/en/copilot/tutorials/copilot-cookbook)、[Midjourney](https://docs.midjourney.com/hc/en-us/articles/32023408776205-Prompt-Basics/) 、[OpenAI Academy 求职案例](https://academy.openai.com/public/resources/helping-job-seekers-with-chatgpt-2025-12-03)、[Microsoft 客诉案例](https://enablement.microsoft.com/en-us/copilot/prompt-gallery/?steps=respond-to-a-customer-complaint) 和 [Veo](https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide) 提供面向终端用户的例子，补充了会议、协作、学习、测试和媒体的实际输入和交付格式。
 
 ## 分类规则与入选逻辑
 
@@ -75,5 +82,11 @@
 | 数据与表格 | 字段提取、数据探索 | 表格公式、SQL、图表和清洗 |
 | 开发与调试 | 理解代码、定位问题、实现需求 | 代码评审、测试和重构 |
 | 创作与多媒体 | 生成图像、读图、故事 | 改图、短视频分镜和多方向文案 |
+| 求职与职业 | 岗位拆解、简历、求职信 | 行为面试、面试复盘、作品集和职业交流 |
+| 产品与业务 | 用户访谈、产品需求、用户故事 | 机会发现、实验设计及复盘、支持工单 |
+| 沟通与协商 | 反馈、跟进、投诉回应 | 分歧调解、困难对话、拒绝和协商 |
+| 提示词与 AI 工作流 | Prompt 修复、示例、输出结构 | 评测对比、上下文交接和人工检查点 |
 
-证据标记分三类。「使用研究」表示现实使用数据支持同类目的，可能对应论文的上位类。「公开案例」表示能查到相似用途或工作流。「编辑补充」表示有明确交付价值，模板来自本项目对工作流的补足。每类 6 条是首版目录的编辑范围，各类及目录内的排列不代表相对频率。模板采用目标、可替换的真实输入、输出形式和简短的验收信号。项目核查了来源映射及模板交互，未对所有模板做跨模型效果对比。
+本版也对原有八类各补五条。新增条目优先填补独立交付物或验证步骤，例如从主题调研扩展到证据对照表和来源分歧检查，从表格公式扩展到透视、公式诊断和对账。沟通按实际互动与下一步分组，单纯的文字起草仍归写作。新增求职和产品条目主要有公开案例支持，现有国际数据无法给它们的具体 Prompt 排出统一频率。
+
+证据标记分三类。「使用研究」表示现实使用数据支持同类目的，可能对应论文的上位类。「公开案例」表示能查到相似用途或工作流。「编辑补充」表示有明确交付价值，模板来自本项目对工作流的补足。各类的条目数量和展示顺序体现当前编辑范围。模板采用目标、可替换的真实输入、输出形式和简短的验收信号。项目核查了来源映射及模板交互，未对所有模板做跨模型效果对比。

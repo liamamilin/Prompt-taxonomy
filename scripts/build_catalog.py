@@ -41,7 +41,7 @@ for line in (root / "catalog.txt").read_text().splitlines():
     prompts.append(dict(id=key, category=category, title=title, description=description,
                         tags=tags.split(","), evidence=basis, sources=references,
                         variables=variables, template=template))
-output = dict(version="1.0", researchedOn="2026-11-19", categories=categories, evidence=evidence,
+output = dict(version="1.1", researchedOn="2026-11-19", categories=categories, evidence=evidence,
               sources=sources, prompts=prompts)
 (root.parent / "docs" / "catalog.json").write_text(
     json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"

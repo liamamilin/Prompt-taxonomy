@@ -18,7 +18,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,te
 .header-inner nav a{text-decoration:none}.header-inner nav a:hover{text-decoration:underline}
 .hero{display:grid;grid-template-columns:1fr minmax(240px,36%);gap:2rem;align-items:center;padding:67px 0 56px;border-bottom:1px solid var(--line)}
 .eyebrow{font:700 .77rem/1.5 var(--mono);letter-spacing:.11em;margin:0;color:var(--muted)}
-.eyebrow span{color:#717968;padding-inline:.3rem}
+.eyebrow span:not(#version){color:#717968;padding-inline:.3rem}
 h1,h2,h3,p{margin-top:0}
 h1{margin:.3rem 0 .6rem;font-size:clamp(3.1rem,7.25vw,7.2rem);line-height:1.05;letter-spacing:-.08em;font-weight:900}
 h1 span{color:#4a7320;margin-left:.09em}
@@ -32,7 +32,7 @@ h1 span{color:#4a7320;margin-left:.09em}
 input[type=search],select{min-height:43px;border:1px solid #bfc4b6;background:var(--panel);border-radius:6px;color:var(--ink);font-size:.9rem}
 input[type=search]{width:clamp(178px,29vw,395px);padding:.52rem .7rem .52rem 2.2rem}select{padding:.5rem .52rem}
 .library-layout{display:grid;grid-template-columns:176px minmax(0,1fr);gap:24px}
-.sidebar-inner{position:sticky;top:1.5rem}
+.mobile-category{display:none}.sidebar-inner{position:sticky;top:1.5rem}
 .sidebar h3{margin:4px 0 13px;font-size:.79rem;color:var(--muted);letter-spacing:.07em}
 .category{width:100%;display:flex;justify-content:space-between;align-items:center;gap:.7rem;border:1px solid transparent;padding:.65rem .7rem;background:transparent;border-radius:6px;color:var(--ink);text-align:left;font-size:.88rem;margin:0 0 3px;white-space:nowrap}
 .category span:last-child{font:600 .75rem var(--mono);color:var(--muted)}.category:hover{background:#e9eddd}.category[aria-pressed=true]{background:var(--acid);color:var(--ink);border-color:#b4d764;font-weight:750}
@@ -55,8 +55,9 @@ dialog::backdrop{background:#151b14aa}body:has(dialog[open]){overflow:hidden}.di
 .preview-label h3{margin:0;font-size:.94rem}.dialog-content pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f0f2e8;border:1px solid var(--line);padding:.75rem;border-radius:6px;font:inherit;font-size:.88rem;margin:.35rem 0 .65rem}
 .dialog-actions{justify-content:flex-end;margin-bottom:1rem}.dialog-actions span{font-size:.8rem;color:var(--muted)}.detail-sources p{font-size:.84rem;color:var(--muted);margin:.6rem 0}
 @media(max-width:1060px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:720px){.wrap{width:calc(100% - 34px)}.hero{padding:39px 0 33px;grid-template-columns:1fr;gap:1.4rem}.hero-art{height:126px}.art-word{font-size:2rem}.art-bracket{font-size:3.6rem}.library-layout{grid-template-columns:1fr;gap:.55rem}.sidebar-inner{position:static}.sidebar h3{display:none}.sidebar nav{display:flex;overflow:auto;padding:4px 3px 7px;gap:6px}.category{width:auto;border-color:var(--line);margin:0}.library-top{margin-bottom:.85rem}.header-inner{min-height:58px}.card{min-height:151px}.source-details ul{columns:1}}
+@media(max-width:720px){.wrap{width:calc(100% - 34px)}.hero{padding:39px 0 33px;grid-template-columns:1fr;gap:1.4rem}.hero-art{height:126px}.art-word{font-size:2rem}.art-bracket{font-size:3.6rem}.library-layout{grid-template-columns:1fr;gap:.55rem}.sidebar-inner{display:none}.mobile-category{display:flex;gap:.55rem;align-items:center;color:var(--muted);font-size:.84rem}.mobile-category select{flex:1;max-width:285px}.library-top{margin-bottom:.85rem}.header-inner{min-height:58px}.card{min-height:151px}.source-details ul{columns:1}}
 @media(max-width:440px){.header-inner nav{gap:.65rem;font-size:.78rem}.brand{font-size:.84rem}.brand-mark{width:1.5rem;height:1.5rem}.library-top{display:block}.filters{margin-top:.85rem}.search-wrap{flex:1;min-width:0}.search-wrap input{width:100%}.cards{gap:7px}.card{padding:9px;min-height:150px}.card-title{font-size:.94rem}.card-top{margin-bottom:8px}.pill{font-size:.64rem}.card-description{font-size:.76rem}.research-top{align-items:start;flex-direction:column}.evidence-key{grid-template-columns:1fr}}
 .sidebar{min-width:0}
 @media(max-width:720px){.library-layout{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:720px){.search-wrap kbd{display:none}}
+.more-results:has(button:not([hidden])){display:flex;justify-content:center;margin-top:16px}

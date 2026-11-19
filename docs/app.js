@@ -3,8 +3,10 @@
 const byId = (id) => document.getElementById(id);
 const search = byId("search");
 const selector = byId("evidence");
+const categorySelect = byId("category-select");
 const categoryNav = byId("categories");
 const cards = byId("cards");
+const more = byId("more");
 const dialog = byId("detail");
 const feedback = byId("feedback");
 const preview = byId("preview");
@@ -15,6 +17,12 @@ let index;
 let activeCategory = "";
 let activePrompt = null;
 let opener = null;
+const pageSize = 24;
+let visibleCount = pageSize;
+
+function normalize(value) {
+  return value.normalize("NFKC").toLocaleLowerCase();
+}
 
 function element(tag, text, className) {
   const node = document.createElement(tag);
@@ -40,26 +48,35 @@ function badge(key) {
 
 function selectCategory(id) {
   activeCategory = id;
+  categorySelect.value = id;
   for (const button of categoryNav.children) {
     button.setAttribute("aria-pressed", String(button.dataset.category === id));
   }
+  resetResults();
+}
+
+function resetResults() {
+  visibleCount = pageSize;
   render();
 }
 
 function render() {
-  const words = search.value.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
+  const words = normalize(search.value).trim().split(/\s+/).filter(Boolean);
   const filtered = index.filter(({ prompt, keywords }) =>
     (!activeCategory || prompt.category === activeCategory)
     && (!selector.value || prompt.evidence === selector.value)
     && words.every((word) => keywords.includes(word))
   );
-  byId("results-count").textContent = `找到 ${filtered.length} 条模板`;
+  const hasMore = filtered.length > visibleCount;
+  const countText = `找到 ${filtered.length} 条模板`;
+  byId("results-count").textContent = hasMore ? `${countText}，显示前 ${visibleCount} 条` : countText;
   byId("clear").hidden = !(activeCategory || selector.value || words.length);
+  more.hidden = !hasMore;
   if (filtered.length === 0) {
     cards.replaceChildren(element("div", "没有匹配的模板。试试更短的关键词，或清除当前筛选。", "empty"));
     return;
   }
-  cards.replaceChildren(...filtered.map(({ prompt }) => {
+  cards.replaceChildren(...filtered.slice(0, visibleCount).map(({ prompt }) => {
     const button = element("button", "", "card");
     button.type = "button";
     button.setAttribute("aria-haspopup", "dialog");
@@ -155,11 +172,14 @@ async function copyText(text, success, fallback) {
 function initialize(data) {
   catalog = data;
   categories = new Map(data.categories.map((category) => [category.id, category]));
-  index = data.prompts.map((prompt) => ({
-    prompt,
-    keywords: [prompt.title, prompt.description, prompt.template, ...prompt.tags,
-      categories.get(prompt.category).name].join(" ").toLocaleLowerCase(),
-  }));
+  const categoryPositions = new Map();
+  index = data.prompts.map((prompt) => {
+    const position = categoryPositions.get(prompt.category) ?? 0;
+    categoryPositions.set(prompt.category, position + 1);
+    return { prompt, position, keywords: normalize([prompt.title, prompt.description, prompt.template, ...prompt.tags,
+      categories.get(prompt.category).name].join(" ")) };
+  }).sort((a, b) => a.position - b.position);
+  byId("version").textContent = data.version;
   byId("prompt-count").textContent = data.prompts.length;
   byId("category-count").textContent = categories.size;
   byId("source-count").textContent = Object.keys(data.sources).length;
@@ -178,14 +198,24 @@ function initialize(data) {
     button.dataset.category = category.id;
     button.title = category.description || "显示完整目录";
     const count = category.id ? data.prompts.filter((prompt) => prompt.category === category.id).length : data.prompts.length;
+    const option = element("option", `${category.name}（${count}）`);
+    option.value = category.id;
+    categorySelect.append(option);
     button.append(element("span", category.name), element("span", String(count)));
     button.addEventListener("click", () => selectCategory(category.id));
     categoryNav.append(button);
   }
 
   sourceList(Object.keys(data.sources), byId("sources"));
-  search.addEventListener("input", render);
-  selector.addEventListener("change", render);
+  search.addEventListener("input", resetResults);
+  selector.addEventListener("change", resetResults);
+  categorySelect.addEventListener("change", () => selectCategory(categorySelect.value));
+  more.addEventListener("click", () => {
+    const next = visibleCount;
+    visibleCount += pageSize;
+    render();
+    cards.children[next]?.focus();
+  });
   byId("clear").addEventListener("click", () => {
     search.value = "";
     selector.value = "";
@@ -213,7 +243,7 @@ function initialize(data) {
   syncHash();
 }
 
-fetch("./catalog.json")
+fetch("./catalog.json?v=1.1")
   .then((response) => {
     if (!response.ok) throw new Error(`Catalog: ${response.status}`);
     return response.json();

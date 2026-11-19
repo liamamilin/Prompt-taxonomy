@@ -26,3 +26,8 @@ academy|OpenAI Academy · Prompt Pack for Students|官方案例|https://academy.
 gitdocs|GitHub Docs · Copilot Cookbook|官方案例|https://docs.github.com/en/copilot/tutorials/copilot-cookbook|调试、文档、重构及测试的官方使用示例。
 midjourney|Midjourney Docs · Prompt Basics|官方案例|https://docs.midjourney.com/hc/en-us/articles/32023408776205-Prompt-Basics/|用于描述主体、媒介、环境、光线、色彩和构图的建议。
 veo|Google Cloud · Video generation prompt guide|官方案例|https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide|面向视频生成指令的动作、风格、运镜和声音案例。
+amplitude|Amplitude · Builder Skills|GitHub 仓库|https://github.com/amplitude/builder-skills|产品访谈、需求、实验、支持反馈、分析与协作技能。
+prompt-tutorial|Anthropic · Interactive Prompt Engineering Tutorial|GitHub 仓库|https://github.com/anthropics/prompt-eng-interactive-tutorial|清晰指令、示例、结构化输出和减少错误的交互式练习。
+openai-evals|OpenAI · Evals|GitHub 仓库|https://github.com/openai/evals|样本、参考答案与评测规则的开源实现和示例。
+career-academy|OpenAI Academy · Helping Job Seekers with ChatGPT|官方案例|https://academy.openai.com/public/resources/helping-job-seekers-with-chatgpt-2025-12-03|求职材料、岗位匹配和面试准备的案例。
+ms-complaint|Microsoft Copilot · Respond to a customer complaint|官方案例|https://enablement.microsoft.com/en-us/copilot/prompt-gallery/?steps=respond-to-a-customer-complaint|根据客户投诉整理背景，拟定回应和后续动作。

@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="以 GitHub 开源案例和国际使用研究为基础，整理 48 条可填写、复制和分享的中文 Prompt。">
+  <meta name="description" content="以 GitHub 开源案例和国际使用研究为基础，整理 120 条可填写、复制和分享的中文 Prompt。">
   <meta name="theme-color" content="#f8f8f0">
   <title>Prompt Taxonomy · 提示词图谱</title>
   <link rel="icon" href="./icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css">
-  <script src="./app.js" defer></script>
+  <link rel="stylesheet" href="./style.css?v=1.1">
+  <script src="./app.js?v=1.1" defer></script>
 </head>
 <body>
   <a class="skip" href="#library">跳至模板</a>
@@ -25,13 +25,13 @@
   <main class="wrap">
     <section class="hero" aria-labelledby="hero-title">
       <div>
-        <p class="eyebrow">公开提示词目录 <span> / </span> V1.0</p>
+        <p class="eyebrow">公开提示词目录 <span> / </span> V<span id="version">1.1</span></p>
         <h1 id="hero-title">提示词图谱<span>.</span></h1>
         <p class="lede">从你想完成的任务出发。找到一条合适的 Prompt，填入你的材料，即可复制使用。</p>
         <div class="hero-facts" aria-label="目录规模">
-          <span><b id="prompt-count">48</b> 条模板</span>
-          <span><b id="category-count">8</b> 类任务</span>
-          <a href="#research"><b id="source-count">28</b> 个来源 ↘</a>
+          <span><b id="prompt-count">120</b> 条模板</span>
+          <span><b id="category-count">12</b> 类任务</span>
+          <a href="#research"><b id="source-count">33</b> 个来源 ↘</a>
         </div>
       </div>
       <div class="hero-art" aria-hidden="true"><span class="art-corner">+</span><span class="art-bracket">[</span><span class="art-word">input<br><em>↳ output</em></span><span class="art-bracket">]</span><span class="art-corner">+</span></div>
@@ -51,10 +51,14 @@
         </div>
       </div>
       <div class="library-layout">
-        <aside class="sidebar"><div class="sidebar-inner"><h3>任务分类</h3><nav id="categories" aria-label="按任务分类"></nav></div></aside>
+        <aside class="sidebar">
+          <div class="sidebar-inner"><h3>任务分类</h3><nav id="categories" aria-label="按任务分类"></nav></div>
+          <div class="mobile-category"><label for="category-select">任务分类</label><select id="category-select"></select></div>
+        </aside>
         <div class="results">
           <div class="results-line"><p id="results-count" role="status">正在载入模板…</p><button class="text-button" id="clear" hidden>清除筛选</button></div>
           <div class="cards" id="cards"></div>
+          <div class="more-results"><button class="button light" type="button" id="more" hidden>显示更多模板</button></div>
         </div>
       </div>
       <noscript><p>请启用 JavaScript 以搜索和填写模板，或 <a href="./catalog.json">查看 JSON 目录</a>。</p></noscript>
