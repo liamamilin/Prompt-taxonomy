@@ -1,0 +1,19 @@
+source-to-brief|From a research question to a sourced brief|Deliver a conclusion with enough detail for others to verify it.
+notes-to-decision|From a meeting to decisions and follow-up|Prepare the agenda, then hand decisions, owners, and next steps to the team.
+draft-to-publish|From a writing brief to publication|Plan, edit, and adapt a piece for a known audience.
+learn-a-topic|Learn a new topic|Use explanations, exercises, and error feedback to check independent understanding.
+language-practice|Run a language practice session|Start at the right level, practice in context, and review your speaking.
+plan-travel|Plan and check a trip|Verify the itinerary, packing list, and backup plans before leaving.
+compare-purchase|Decide what to buy|Narrow the options, then verify reviews, costs, and the final details.
+document-to-data|From a file bundle to verifiable data|Use for scans, PDF tables, and data that needs checking at each step.
+analyze-and-report|From a business question to a data report|Define the metrics, explore the data, and brief the decision maker.
+fix-and-release|From a bug report to release verification|Reproduce and verify the fix through the real user entry point.
+idea-to-video|From a story idea to a video you can shoot and edit|Develop the story, then plan shots, narration, editing, and captions.
+job-application|Prepare an application and interview|Tie your resume, interview stories, and debrief to evidence of role fit.
+product-discovery|From user interviews to product validation|Use when a team still needs to validate the problem, scope, or experiment results.
+difficult-talk|Prepare for a difficult conversation and follow up|Set boundaries, rehearse your response, and confirm next steps in writing.
+launch-campaign|From positioning to a campaign readout|Carry verifiable claims through the channels, landing page, and results.
+handle-support-case|Handle a support case|Route, reply, troubleshoot, hand off if needed, and close the ticket.
+evaluate-a-prompt|Verify whether a prompt improved|Collect failure examples and compare the versions on the same inputs.
+operate-ai-workflow|Turn a one-off AI task into a reusable workflow|Specify steps, tools, context for handoff, and human review points.
+reflect-and-adjust|Turn everyday observations into a small change|Reflect on real records and choose one manageable action to try.

@@ -1,0 +1,16 @@
+research|Search & research|Turn a question into a traceable answer.
+writing|Writing & language|Draft, edit, translate, and adapt text.
+learning|Learning & tutoring|Explain concepts, practice skills, and check understanding.
+planning|Planning & daily life|Turn everyday problems into practical plans.
+office|Office & collaboration|Turn meetings, documents, and messages into shared work.
+data|Data & spreadsheets|Turn raw inputs into reliable structures, findings, and charts.
+coding|Development & debugging|Understand, change, troubleshoot, and verify code.
+creative|Creative & media|Turn ideas into writing, visuals, and usable production plans.
+career|Job search & career|Research roles, prepare materials, interview, and compare options.
+product|Product & business|Discover problems, define requirements, and run experiments.
+communication|Communication & negotiation|Prepare real conversations, follow up, and resolve disagreements.
+prompt-workflows|Prompts & AI workflows|Design prompts you can reuse, evaluate, and hand off.
+files|Documents & files|Extract information from files and prepare deliverables.
+language|Language practice & localization|Practice language skills and adapt terminology, register, and software text.
+marketing|Marketing & sales|Research audiences, define positioning, and prepare campaigns and sales materials.
+support|Customer support & operations|Route, troubleshoot, hand off, and review service requests.

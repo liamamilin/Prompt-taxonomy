@@ -1,0 +1,49 @@
+openai|Consumer ChatGPT task categories and distribution. Table 3 lists more detailed categories.
+signals|Topics and purposes of use through the third quarter of 2026.
+oxford|Online survey in nine countries, including a six-country time series and specific information tasks.
+four|Preprint based on participant-authorized chat exports in India, Nigeria, Brazil, and Pakistan.
+anthropic|Task distribution by Claude product and time, including clusters of development tasks in Claude Code.
+pew|Self-reported uses of AI by U.S. teenagers for finding information, schoolwork, and other tasks.
+wildchat|An opt-in multilingual ChatGPT conversation corpus. Participants are self-selected.
+arena|Real interactions with multiple models, including experimentation and model evaluation.
+prompts-chat|A general collection of role-based prompts with examples of coverage and wording.
+fabric|Task-oriented workflows for summaries, claims, charts, email, and code.
+dair|Examples for summarization, extraction, Q&A, classification, dialogue, coding, and reasoning.
+copilot|Development workflows for understanding code, splitting features, planning implementation, and writing documentation.
+oai-cookbook|Runnable examples for entity extraction, data transformations, presentations, and images.
+claude|Examples of summarization, classification, retrieval, and text-to-SQL. Image examples are in the multimodal directory.
+storm|Multiple viewpoints, query decomposition, evidence organization, and writing with citations.
+gptr|Search planning, relevance filtering, evidence summaries, and research reports.
+gemini|Grounded research, citation matching, video understanding, entity extraction, and analysis of images and documents.
+nano|Creator-shared examples for image generation and editing reference photos, with outputs and original posts.
+frank|Business email, study notes, meal planning, marketing, and coding examples. Includes upstream material.
+ms-course|Teaching examples for drafting, summarization, and conversational text generation.
+ms-base|Benchmarks for comparing prompting techniques and structured output.
+writing-app|The instructions and interactions used in a writing-feedback application.
+ms|Examples for meeting prep and recaps, communication, presentations, and collaboration.
+google|Role-specific examples for communication, content, and working with source material.
+academy|Templates for study plans, active practice, review, and checking understanding.
+gitdocs|Official examples for debugging, documentation, refactoring, and testing.
+midjourney|Guidance for describing subject, medium, setting, light, color, and composition.
+veo|Video generation examples for action, style, camera movement, and sound.
+amplitude|Product interviews, requirements, experiments, support feedback, analytics, and collaboration.
+prompt-tutorial|Interactive examples for clear instructions, examples, structured output, and error reduction.
+openai-evals|Open-source evaluation examples and implementations for samples, reference answers, and rubrics.
+career-academy|Job-search materials, role fit, and interview preparation.
+ms-complaint|Organizing the context around a complaint and drafting a response and next steps.
+anthskills|Workflows for PDF, Word, slides, spreadsheets, internal communications, branding, and web testing.
+oaiskills|Workflows for PDF, transcription, web verification, CI, and design. See each skill for its scope.
+marketing|Positioning, marketing copy, customer research, SEO, attribution, and outreach.
+superpowers|Systematic debugging, planning, testing, code review, and verification before completion.
+bmad|Product, engineering, and delivery workflows organized by role and stage.
+msagents|Lessons on tool use, planning, retrieval-based answers, and context management.
+rasa|Examples of routing support requests, opening cases, checking status, and handing off to a person.
+dialekt|A conversation-based language tutor with level and formality settings.
+language-prompts|Vocabulary stories, spoken-material review, speaking games, and situational practice.
+resume|A working example of adjusting a resume to a job description and checking fit.
+markit|Converts PDFs, Office files, and other documents to Markdown for text analysis.
+signals-work|Aggregate data for 165 work activities across almost 100 countries, including instruction, marketing, coding, and analysis.
+msresearch|Analysis of 200,000 Bing Copilot conversations, including writing, finding information, teaching, and advising.
+fedwork|Detailed work tasks self-reported by U.S. workers, complementing what can be observed in chat logs.
+ai-home|Prompts and examples for everyday life.
+ms-service|Ways to gather support context, draft replies, and organize service information.

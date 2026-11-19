@@ -65,9 +65,73 @@ for line in (root / "workflows.txt").read_text().splitlines():
 if covered_categories != category_ids:
     raise ValueError(f"Categories without a workflow: {category_ids - covered_categories}")
 
-output = dict(version="2.0", researchedOn="2026-11-19", categories=categories, evidence=evidence,
+output = dict(version="2.1", researchedOn="2026-11-19", categories=categories, evidence=evidence,
               sources=sources, prompts=prompts, workflows=workflows)
-(root.parent / "docs" / "catalog.json").write_text(
-    json.dumps(output, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+
+
+def translations(filename, fields):
+    """Read translations keyed by the same IDs as the primary catalog."""
+    rows = {}
+    for line in (root / filename).read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        key, *values = line.split("|", fields)
+        if len(values) != fields or key in rows or not all(value.strip() for value in values):
+            raise ValueError(f"Invalid translation in {filename}: {key}")
+        rows[key] = values
+    return rows
+
+
+english = translations("catalog.en.txt", 3)
+english_categories = translations("categories.en.txt", 2)
+english_workflows = translations("workflows.en.txt", 2)
+english_sources = translations("sources.en.txt", 1)
+for kind, actual, expected in (
+    ("prompts", english.keys(), ids),
+    ("categories", english_categories.keys(), category_ids),
+    ("workflows", english_workflows.keys(), workflow_ids),
+    ("sources", english_sources.keys(), sources.keys()),
+):
+    if actual != expected:
+        raise ValueError(f"Unmatched English {kind}. Missing: {expected - actual}. Unexpected: {actual - expected}")
+
+kind_labels = {
+    "日志研究": "Usage study",
+    "跨国调查": "Cross-country survey",
+    "人群调查": "Population survey",
+    "公开语料研究": "Public corpus study",
+    "GitHub 仓库": "GitHub repository",
+    "官方案例": "Official examples",
+}
+english_prompts = []
+for prompt in prompts:
+    title, description, template = english[prompt["id"]]
+    variables = list(dict.fromkeys(re.findall("【([^】]+)】", template)))
+    # The site retains user input in this order when switching languages.
+    if len(variables) != len(prompt["variables"]):
+        raise ValueError(f"Variable count differs in English prompt: {prompt['id']}")
+    tags = [tag for tag in prompt["tags"] if not re.search(r"[\u3400-\u9fff]", tag)]
+    english_prompts.append(dict(prompt, title=title, description=description,
+                                template=template, variables=variables, tags=tags))
+
+english_output = dict(
+    output,
+    categories=[dict(cat, name=english_categories[cat["id"]][0],
+                     description=english_categories[cat["id"]][1]) for cat in categories],
+    evidence={
+        "usage": {"label": "Usage research", "description": "Published usage data or surveys record similar tasks."},
+        "example": {"label": "Public examples", "description": "Related examples appear in public repositories or official guides."},
+        "editorial": {"label": "Editorial addition", "description": "An original template that fills a gap in a workflow."},
+    },
+    sources={key: dict(source, name=source["name"].replace("Kiran 等", "Kiran et al."),
+                       kind=kind_labels[source["kind"]], note=english_sources[key][0]) for key, source in sources.items()},
+    prompts=english_prompts,
+    workflows=[dict(flow, title=english_workflows[flow["id"]][0],
+                    description=english_workflows[flow["id"]][1]) for flow in workflows],
 )
+
+for filename, data in (("catalog.json", output), ("catalog.en.json", english_output)):
+    (root.parent / "docs" / filename).write_text(
+        json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
 print(f"{len(prompts)} prompts, {len(categories)} categories, {len(workflows)} workflows, {len(sources)} sources")
