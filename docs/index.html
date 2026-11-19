@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="以 GitHub 开源案例和国际使用研究为基础，整理 120 条可填写、复制和分享的中文 Prompt。">
+  <meta name="description" content="以国际 GitHub 案例和使用研究为基础，整理 224 条可复制的常用 Prompt 和 19 条工作流。">
   <meta name="theme-color" content="#f8f8f0">
   <title>Prompt Taxonomy · 提示词图谱</title>
   <link rel="icon" href="./icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./style.css?v=1.1">
-  <script src="./app.js?v=1.1" defer></script>
+  <link rel="stylesheet" href="./style.css?v=2.0">
+  <script src="./app.js?v=2.0" defer></script>
 </head>
 <body>
   <a class="skip" href="#library">跳至模板</a>
@@ -17,6 +17,7 @@
       <a class="brand" href="./" aria-label="Prompt Taxonomy 首页"><span class="brand-mark" aria-hidden="true">↗</span> Prompt Taxonomy</a>
       <nav aria-label="站内导航">
         <a href="#library">模板库</a>
+        <a href="#workflows">工作流</a>
         <a href="#research">调研</a>
         <a href="https://github.com/liamamilin/Prompt-taxonomy">GitHub ↗</a>
       </nav>
@@ -25,13 +26,14 @@
   <main class="wrap">
     <section class="hero" aria-labelledby="hero-title">
       <div>
-        <p class="eyebrow">公开提示词目录 <span> / </span> V<span id="version">1.1</span></p>
+        <p class="eyebrow">公开提示词目录 <span> / </span> V<span id="version">2.0</span></p>
         <h1 id="hero-title">提示词图谱<span>.</span></h1>
         <p class="lede">从你想完成的任务出发。找到一条合适的 Prompt，填入你的材料，即可复制使用。</p>
         <div class="hero-facts" aria-label="目录规模">
-          <span><b id="prompt-count">120</b> 条模板</span>
-          <span><b id="category-count">12</b> 类任务</span>
-          <a href="#research"><b id="source-count">33</b> 个来源 ↘</a>
+          <span><b id="prompt-count">224</b> 条模板</span>
+          <span><b id="category-count">16</b> 类任务</span>
+          <a href="#workflows"><b id="workflow-count">19</b> 条工作流 ↘</a>
+          <a href="#research"><b id="source-count">49</b> 个来源 ↘</a>
         </div>
       </div>
       <div class="hero-art" aria-hidden="true"><span class="art-corner">+</span><span class="art-bracket">[</span><span class="art-word">input<br><em>↳ output</em></span><span class="art-bracket">]</span><span class="art-corner">+</span></div>
@@ -43,7 +45,7 @@
           <div class="search-wrap">
             <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m16 16 4 4"/></svg>
             <label class="sr-only" for="search">搜索模板</label>
-            <input id="search" type="search" placeholder="搜索邮件、调研、SQL…" autocomplete="off">
+            <input id="search" type="search" placeholder="搜索邮件、PDF、客服…" autocomplete="off">
             <kbd aria-hidden="true">/</kbd>
           </div>
           <label class="sr-only" for="evidence">证据类型</label>
@@ -63,10 +65,21 @@
       </div>
       <noscript><p>请启用 JavaScript 以搜索和填写模板，或 <a href="./catalog.json">查看 JSON 目录</a>。</p></noscript>
     </section>
+    <section class="research" id="workflows" aria-labelledby="workflows-title">
+      <div class="research-top">
+        <div><p class="eyebrow">从输入到交付</p><h2 id="workflows-title">按工作流使用</h2></div>
+        <a class="button light" href="#library">返回模板库 ↑</a>
+      </div>
+      <p class="research-intro">展开一条工作流，按顺序打开模板。可以把上一步的结果填到下一步。</p>
+      <div class="workflow-list" id="workflow-list"></div>
+    </section>
     <section class="research" id="research" aria-labelledby="research-title">
       <div class="research-top">
         <div><p class="eyebrow">资料与方法</p><h2 id="research-title">模板从哪里来</h2></div>
-        <a class="button light" href="https://github.com/liamamilin/Prompt-taxonomy/blob/main/RESEARCH.md">完整调研与对照表 ↗</a>
+        <div class="research-links">
+          <a class="button light" href="https://github.com/liamamilin/Prompt-taxonomy/blob/main/COVERAGE.md">任务覆盖审查 ↗</a>
+          <a class="button light" href="https://github.com/liamamilin/Prompt-taxonomy/blob/main/RESEARCH.md">完整调研 ↗</a>
+        </div>
       </div>
       <p class="research-intro">以 GitHub 上的通用库和专题项目为样本，再用国际调查和平台使用研究核对。来源支持的是同类任务或可借鉴的做法，具体模板由本项目编写。</p>
       <div class="evidence-key" id="evidence-key"></div>

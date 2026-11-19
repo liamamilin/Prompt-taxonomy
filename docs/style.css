@@ -61,3 +61,16 @@ dialog::backdrop{background:#151b14aa}body:has(dialog[open]){overflow:hidden}.di
 @media(max-width:720px){.library-layout{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:720px){.search-wrap kbd{display:none}}
 .more-results:has(button:not([hidden])){display:flex;justify-content:center;margin-top:16px}
+.sidebar-inner{max-height:calc(100vh - 3rem);overflow:auto;padding:3px 5px}
+.research-links{display:flex;gap:.45rem;flex-wrap:wrap}
+.workflow-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;align-items:start}
+.workflow{border:1px solid var(--line);background:var(--panel);border-radius:7px;padding:.65rem .8rem}
+.workflow summary{font-size:.9rem;font-weight:750;line-height:1.7}
+.workflow-count{float:right;margin-left:.3rem;font:600 .73rem/2 var(--mono);color:var(--muted)}
+.workflow p{margin:.65rem 0 .3rem;color:var(--muted);font-size:.83rem}
+.workflow-steps{margin:.3rem 0;padding-left:1.25rem}
+.workflow-steps li{padding:.18rem 0;font-size:.84rem}
+.workflow-steps button{text-align:left}
+@media(max-width:990px){.workflow-list{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:570px){.workflow-list{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:440px){.header-inner nav a:last-child{display:none}}

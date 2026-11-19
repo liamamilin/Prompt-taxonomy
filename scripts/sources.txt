@@ -31,3 +31,19 @@ prompt-tutorial|Anthropic · Interactive Prompt Engineering Tutorial|GitHub 仓�
 openai-evals|OpenAI · Evals|GitHub 仓库|https://github.com/openai/evals|样本、参考答案与评测规则的开源实现和示例。
 career-academy|OpenAI Academy · Helping Job Seekers with ChatGPT|官方案例|https://academy.openai.com/public/resources/helping-job-seekers-with-chatgpt-2025-12-03|求职材料、岗位匹配和面试准备的案例。
 ms-complaint|Microsoft Copilot · Respond to a customer complaint|官方案例|https://enablement.microsoft.com/en-us/copilot/prompt-gallery/?steps=respond-to-a-customer-complaint|根据客户投诉整理背景，拟定回应和后续动作。
+anthskills|Anthropic · Agent Skills|GitHub 仓库|https://github.com/anthropics/skills/tree/main/skills|PDF、Word、幻灯片、表格、内部沟通、品牌和网页测试工作流。
+oaiskills|OpenAI · Skills Catalog|GitHub 仓库|https://github.com/openai/skills/tree/main/skills/.curated|PDF、语音转录、网页验证、CI 和设计相关工作流；需按技能查看适用范围。
+marketing|Corey Haines · Marketing Skills|GitHub 仓库|https://github.com/coreyhaines31/marketingskills/tree/main/skills|定位、营销文案、受众研究、SEO、数据归因及商务拓展。
+superpowers|obra · Superpowers|GitHub 仓库|https://github.com/obra/superpowers/tree/main/skills|系统化调试、写计划、测试、代码评审和完成前验证。
+bmad|BMAD Method|GitHub 仓库|https://github.com/bmad-code-org/BMAD-METHOD/tree/main/skills|按角色和阶段组织的产品、工程与交付工作流。
+msagents|Microsoft · AI Agents for Beginners|GitHub 仓库|https://github.com/microsoft/ai-agents-for-beginners|工具使用、规划、基于文档检索回答和上下文管理教学。
+rasa|Rasa · Helpdesk Assistant|GitHub 仓库|https://github.com/RasaHQ/helpdesk-assistant|客服问题的分类、建单、状态查询和转人工实例。用于参考服务流程。
+dialekt|Dialekt · Language Tutor|GitHub 仓库|https://github.com/cristianodabc/dialekt|按语言等级、正式程度设定的对话学习项目。
+language-prompts|aoilang · Language Learning Prompts|GitHub 仓库|https://github.com/aoilang/language-learning-prompts|词汇故事、语音材料复习、口语游戏和分情境语言练习。
+resume|Resume Matcher|GitHub 仓库|https://github.com/srbhr/Resume-Matcher|以岗位说明调整简历和分析匹配的实际交互。
+markit|Microsoft · MarkItDown|GitHub 仓库|https://github.com/microsoft/markitdown|把 PDF、Office 文件和其他资料转成可供文本分析使用的 Markdown。
+signals-work|OpenAI Signals · ChatGPT’s expanding world of work|日志研究|https://openai.com/index/chatgpt-expanding-world-of-work/|近 100 个国家的 165 种工作活动聚合分类。涵盖教学材料、营销内容、开发和分析。
+msresearch|Microsoft Research · Working with AI|日志研究|https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/|200,000 次 Bing Copilot 会话的任务分析，见写作、取信息、教学和建议等用途。
+fedwork|St. Louis Fed · What Work Does Generative AI Do?|人群调查|https://www.stlouisfed.org/on-the-economy/2026/sep/what-work-does-generative-ai-do|美国工人自报的具体工作任务。用来补充聊天日志中看不到的工作内采用情况。
+ai-home|OpenAI Academy · AI at Home|官方案例|https://academy.openai.com/en/public/resources/ai-at-home-2025-12-03|面向日常生活的提示与案例。
+ms-service|Microsoft Copilot for Service|官方案例|https://enablement.microsoft.com/en-us/copilot-for-service/|从客服案例和资料获取背景、协助写回复及整理服务上下文。

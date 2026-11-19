@@ -1,5 +1,5 @@
 {
-  "version": "1.1",
+  "version": "2.0",
   "researchedOn": "2026-11-19",
   "categories": [
     {
@@ -61,6 +61,26 @@
       "id": "prompt-workflows",
       "name": "提示词与 AI 工作流",
       "description": "设计可重复调用、容易评测和交接的 Prompt。"
+    },
+    {
+      "id": "files",
+      "name": "文档与文件",
+      "description": "从 PDF、截图和文件包提取信息，制作可交付文件。"
+    },
+    {
+      "id": "language",
+      "name": "语言练习与本地化",
+      "description": "练听说读写，并处理跨语言术语、语域与软件文案。"
+    },
+    {
+      "id": "marketing",
+      "name": "营销与销售",
+      "description": "从受众研究到定位、渠道内容和对客销售材料。"
+    },
+    {
+      "id": "support",
+      "name": "客服与服务运营",
+      "description": "分流、诊断、交接和复盘实际服务请求。"
     }
   ],
   "evidence": {
@@ -275,6 +295,102 @@
       "kind": "官方案例",
       "url": "https://enablement.microsoft.com/en-us/copilot/prompt-gallery/?steps=respond-to-a-customer-complaint",
       "note": "根据客户投诉整理背景，拟定回应和后续动作。"
+    },
+    "anthskills": {
+      "name": "Anthropic · Agent Skills",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/anthropics/skills/tree/main/skills",
+      "note": "PDF、Word、幻灯片、表格、内部沟通、品牌和网页测试工作流。"
+    },
+    "oaiskills": {
+      "name": "OpenAI · Skills Catalog",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/openai/skills/tree/main/skills/.curated",
+      "note": "PDF、语音转录、网页验证、CI 和设计相关工作流；需按技能查看适用范围。"
+    },
+    "marketing": {
+      "name": "Corey Haines · Marketing Skills",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/coreyhaines31/marketingskills/tree/main/skills",
+      "note": "定位、营销文案、受众研究、SEO、数据归因及商务拓展。"
+    },
+    "superpowers": {
+      "name": "obra · Superpowers",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/obra/superpowers/tree/main/skills",
+      "note": "系统化调试、写计划、测试、代码评审和完成前验证。"
+    },
+    "bmad": {
+      "name": "BMAD Method",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD/tree/main/skills",
+      "note": "按角色和阶段组织的产品、工程与交付工作流。"
+    },
+    "msagents": {
+      "name": "Microsoft · AI Agents for Beginners",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "note": "工具使用、规划、基于文档检索回答和上下文管理教学。"
+    },
+    "rasa": {
+      "name": "Rasa · Helpdesk Assistant",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/RasaHQ/helpdesk-assistant",
+      "note": "客服问题的分类、建单、状态查询和转人工实例。用于参考服务流程。"
+    },
+    "dialekt": {
+      "name": "Dialekt · Language Tutor",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/cristianodabc/dialekt",
+      "note": "按语言等级、正式程度设定的对话学习项目。"
+    },
+    "language-prompts": {
+      "name": "aoilang · Language Learning Prompts",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/aoilang/language-learning-prompts",
+      "note": "词汇故事、语音材料复习、口语游戏和分情境语言练习。"
+    },
+    "resume": {
+      "name": "Resume Matcher",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/srbhr/Resume-Matcher",
+      "note": "以岗位说明调整简历和分析匹配的实际交互。"
+    },
+    "markit": {
+      "name": "Microsoft · MarkItDown",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/microsoft/markitdown",
+      "note": "把 PDF、Office 文件和其他资料转成可供文本分析使用的 Markdown。"
+    },
+    "signals-work": {
+      "name": "OpenAI Signals · ChatGPT’s expanding world of work",
+      "kind": "日志研究",
+      "url": "https://openai.com/index/chatgpt-expanding-world-of-work/",
+      "note": "近 100 个国家的 165 种工作活动聚合分类。涵盖教学材料、营销内容、开发和分析。"
+    },
+    "msresearch": {
+      "name": "Microsoft Research · Working with AI",
+      "kind": "日志研究",
+      "url": "https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/",
+      "note": "200,000 次 Bing Copilot 会话的任务分析，见写作、取信息、教学和建议等用途。"
+    },
+    "fedwork": {
+      "name": "St. Louis Fed · What Work Does Generative AI Do?",
+      "kind": "人群调查",
+      "url": "https://www.stlouisfed.org/on-the-economy/2026/sep/what-work-does-generative-ai-do",
+      "note": "美国工人自报的具体工作任务。用来补充聊天日志中看不到的工作内采用情况。"
+    },
+    "ai-home": {
+      "name": "OpenAI Academy · AI at Home",
+      "kind": "官方案例",
+      "url": "https://academy.openai.com/en/public/resources/ai-at-home-2025-12-03",
+      "note": "面向日常生活的提示与案例。"
+    },
+    "ms-service": {
+      "name": "Microsoft Copilot for Service",
+      "kind": "官方案例",
+      "url": "https://enablement.microsoft.com/en-us/copilot-for-service/",
+      "note": "从客服案例和资料获取背景、协助写回复及整理服务上下文。"
     }
   },
   "prompts": [
@@ -448,6 +564,7 @@
       "tags": [
         "证据",
         "引用",
+        "证据图谱",
         "evidence map"
       ],
       "evidence": "example",
@@ -527,6 +644,141 @@
         "已知背景"
       ],
       "template": "我刚看到【新闻或链接】，只了解【已知背景】。用简短时间线解释前因，再写本次新增事实、各方说法和待核实信息。区分事件时间与报道时间，优先引用当事机构的一手材料；没有联网能力时标记待核实。"
+    },
+    {
+      "id": "research-brief-for-others",
+      "category": "research",
+      "title": "把研究交付成可执行简报",
+      "description": "从长篇材料提炼结论、取舍和待查问题。",
+      "tags": [
+        "调研简报",
+        "研究交付",
+        "research memo"
+      ],
+      "evidence": "example",
+      "sources": [
+        "storm",
+        "gptr",
+        "gemini"
+      ],
+      "variables": [
+        "研究材料",
+        "受众",
+        "问题"
+      ],
+      "template": "把【研究材料】写成给【受众】的简报，协助决定【问题】。结构为结论、关键证据、各方分歧、实际影响和需要继续查的三项。给主要主张对应的出处和日期，并在结尾说明哪些结论可能随新证据改变。"
+    },
+    {
+      "id": "compare-policies",
+      "category": "research",
+      "title": "对照不同机构的规则",
+      "description": "把定义、适用范围和有效期放在同一张表。",
+      "tags": [
+        "政策对比",
+        "条件",
+        "policy comparison"
+      ],
+      "evidence": "example",
+      "sources": [
+        "gemini",
+        "fabric"
+      ],
+      "variables": [
+        "机构与官方规则",
+        "问题"
+      ],
+      "template": "对照【机构与官方规则】判断它们如何处理【问题】。表格列原文位置、适用对象、生效时间、主要要求、例外和未明确部分。规则版本可能变化时注明核对日期，对需要专业解释的部分保留原文。"
+    },
+    {
+      "id": "local-recommendations",
+      "category": "research",
+      "title": "查找符合条件的本地服务",
+      "description": "逐个确认营业、范围、交通和联系方式。",
+      "tags": [
+        "本地",
+        "商家",
+        "附近",
+        "local recommendations"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "oxford",
+        "openai"
+      ],
+      "variables": [
+        "地点和可到达范围",
+        "服务",
+        "约束和偏好"
+      ],
+      "template": "帮我在【地点和可到达范围】找【服务】。优先根据【约束和偏好】筛选，列服务范围、营业时间、费用资料和官方联系入口。标注核对日期，只保留可查证的候选，列出建议打电话确认的问题。"
+    },
+    {
+      "id": "compare-reviews",
+      "category": "research",
+      "title": "区分评论里的共同信号和个案",
+      "description": "按体验维度和使用条件分析。",
+      "tags": [
+        "评价",
+        "评论评估",
+        "review synthesis"
+      ],
+      "evidence": "example",
+      "sources": [
+        "fabric",
+        "amplitude"
+      ],
+      "variables": [
+        "评论或测评",
+        "产品或服务",
+        "关注维度"
+      ],
+      "template": "从【评论或测评】比较【产品或服务】在【关注维度】上的体验。逐项记录相同反馈的样本数、代表原句、使用情境及例外。区分测量、主观判断和宣传内容，指出样本偏差。"
+    },
+    {
+      "id": "interview-source-prep",
+      "category": "research",
+      "title": "为专家采访准备追问",
+      "description": "验证已有事实并用具体问题解决缺口。",
+      "tags": [
+        "专家",
+        "采访",
+        "interview research"
+      ],
+      "evidence": "example",
+      "sources": [
+        "storm",
+        "amplitude",
+        "gptr"
+      ],
+      "variables": [
+        "专家与主题",
+        "背景和待验证说法"
+      ],
+      "template": "要采访【专家与主题】，已知材料是【背景和待验证说法】。列五个能通过具体经历、数据或例子回答的问题，为每个给一个追问。标出相邻的引导性问法及应避免的前提，保留核对受访者回答的位置。"
+    },
+    {
+      "id": "media-shortlist",
+      "category": "research",
+      "title": "按个人口味选下一本书或一部电影",
+      "description": "解释匹配点，保留是否想看下去的判断。",
+      "tags": [
+        "书单",
+        "电影推荐",
+        "不剧透",
+        "book or film recommendations"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "oxford",
+        "prompts-chat"
+      ],
+      "variables": [
+        "作品和喜欢的原因",
+        "时长、题材或情绪",
+        "主题或限制"
+      ],
+      "template": "我喜欢【作品和喜欢的原因】，现在想要【时长、题材或情绪】，希望避开【主题或限制】。给四个可核实的推荐，每个说明匹配点和可能不合适之处。保持无剧透，当前可观看或借阅的渠道若无法核实就留空。"
     },
     {
       "id": "draft-email",
@@ -796,6 +1048,116 @@
       "template": "将【更新素材】编成面向【订阅读者】的【长度和频率】简报。给主题行、开头、一组按重要性排列的条目和下一步。每条说明对读者有什么影响，并把数字或承诺与原材料对齐。"
     },
     {
+      "id": "write-brief",
+      "category": "writing",
+      "title": "把需求写成写作任务简报",
+      "description": "集中说明目标、事实、语气和交付格式。",
+      "tags": [
+        "写作需求",
+        "文章要求",
+        "creative brief"
+      ],
+      "evidence": "example",
+      "sources": [
+        "marketing",
+        "google"
+      ],
+      "variables": [
+        "零散要求和素材",
+        "写作者"
+      ],
+      "template": "把【零散要求和素材】整理为给【写作者】的任务简报。列目标受众、读后行动、主题、必须引用的事实、格式长度及交付时间。将待确认事项写成问题，并给一个可接受开头示例。"
+    },
+    {
+      "id": "line-edit-markup",
+      "category": "writing",
+      "title": "逐句润色并列出变动",
+      "description": "在需要复核时逐项交代措辞变化。",
+      "tags": [
+        "逐句润色",
+        "校订",
+        "修订痕迹",
+        "line editing"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "msresearch",
+        "anthskills"
+      ],
+      "variables": [
+        "原文",
+        "风格或规范"
+      ],
+      "template": "给【原文】做逐句编辑，目标是【风格或规范】。先给清稿，再用「原句 / 修订 / 理由」记录会影响含义或语气的变动。保留术语、数据、引用和责任范围，语义可能变化处请我确认。"
+    },
+    {
+      "id": "headlines",
+      "category": "writing",
+      "title": "为同一内容写多种标题",
+      "description": "使标题与证据、渠道和读者匹配。",
+      "tags": [
+        "标题",
+        "副标题",
+        "headline",
+        "title"
+      ],
+      "evidence": "example",
+      "sources": [
+        "marketing",
+        "frank"
+      ],
+      "variables": [
+        "内容",
+        "渠道和长度",
+        "人群"
+      ],
+      "template": "为【内容】写【渠道和长度】可用的标题，读者是【人群】。给事实型、问题型、结果型三种方向，各写两个。每个都应能对应正文中的证据，并注明适用情况下的首选项。"
+    },
+    {
+      "id": "turn-voice-to-text",
+      "category": "writing",
+      "title": "把口述稿整理成可发表文章",
+      "description": "去除重复口语并保留说话者的事实和声音。",
+      "tags": [
+        "口述",
+        "语音转文稿",
+        "transcribe editing"
+      ],
+      "evidence": "example",
+      "sources": [
+        "oaiskills",
+        "anthskills"
+      ],
+      "variables": [
+        "口述转录",
+        "读者和用途"
+      ],
+      "template": "把【口述转录】整理为面向【读者和用途】的文稿。去除口头重复，按观点重排，保留原话中的事实与署名。听不清或指代不明的片段标记时间和待核对项，结尾列可能需本人确认的改动。"
+    },
+    {
+      "id": "reply-with-constraints",
+      "category": "writing",
+      "title": "根据往来材料写一封有约束的回信",
+      "description": "逐项回应对方的问题和承诺。",
+      "tags": [
+        "回信",
+        "邮件串",
+        "reply to email"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "msresearch",
+        "ms"
+      ],
+      "variables": [
+        "往来邮件",
+        "身份和答复边界"
+      ],
+      "template": "读【往来邮件】后，以【身份和答复边界】写一封回信。开头概括已经同意的事项，逐项回应对方问题，具体写能承诺的动作和时间。没有权限答复或信息不足的点写成明确的待确认项。"
+    },
+    {
       "id": "explain",
       "category": "learning",
       "title": "用例子解释一个概念",
@@ -1049,6 +1411,116 @@
       "template": "按【学习目标或评分规则】评阅【学习者作品】。先指出一处成功表达，再找两处最影响目标的问题，给短例和修改任务。最后留一个可自评的检查点，让学习者自己完成下一稿。"
     },
     {
+      "id": "retrieval-practice",
+      "category": "learning",
+      "title": "用闭卷回忆练习一组知识",
+      "description": "先作答，再回看最需要复习的部分。",
+      "tags": [
+        "主动回忆",
+        "自测",
+        "retrieval practice"
+      ],
+      "evidence": "example",
+      "sources": [
+        "academy",
+        "fabric"
+      ],
+      "variables": [
+        "学习材料",
+        "主题"
+      ],
+      "template": "用【学习材料】帮我复习【主题】。每次只出一道闭卷回忆题，等我作答后按关键点判定漏项，给出处和一句提示。把答错的概念延后再问，最后列下次复习清单。"
+    },
+    {
+      "id": "review-mistakes",
+      "category": "learning",
+      "title": "把错题归成可修正的模式",
+      "description": "区分概念不清、步骤失误和题意误读。",
+      "tags": [
+        "错题本",
+        "错误模式",
+        "error analysis"
+      ],
+      "evidence": "example",
+      "sources": [
+        "academy",
+        "fabric"
+      ],
+      "variables": [
+        "题目、我的解法与答案",
+        "目标知识"
+      ],
+      "template": "根据【题目、我的解法与答案】复盘【目标知识】。逐题指出第一个离开正确路径的步骤，归因为概念、读题或执行，并给一个能针对该错误的小练习。最后告诉我先练哪个错误模式及如何判断改善。"
+    },
+    {
+      "id": "concept-map",
+      "category": "learning",
+      "title": "从材料画出概念关系",
+      "description": "说明概念之间是前提、因果还是对比。",
+      "tags": [
+        "知识图谱",
+        "思维导图",
+        "concept map"
+      ],
+      "evidence": "example",
+      "sources": [
+        "fabric",
+        "academy"
+      ],
+      "variables": [
+        "材料和主题",
+        "读者水平"
+      ],
+      "template": "根据【材料和主题】构建概念图，用适合【读者水平】的文本树或 Mermaid。每条连线说明关系，区分材料直接给出的关系和推断。最后列两个容易被误画成因果的联系。"
+    },
+    {
+      "id": "teach-lesson",
+      "category": "learning",
+      "title": "设计可以直接用的微型课",
+      "description": "用活动和小测验证学习目标。",
+      "tags": [
+        "教案",
+        "备课",
+        "教学",
+        "lesson plan"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "signals-work",
+        "academy",
+        "google"
+      ],
+      "variables": [
+        "学员和已有基础",
+        "时长",
+        "主题"
+      ],
+      "template": "为【学员和已有基础】设计【时长】的【主题】微课。写可观察的学习目标、一个起始问题、示例、练习和出口小测。为可能卡住的人给补救方法，并给一项可供进阶学员尝试的任务。"
+    },
+    {
+      "id": "choose-learning-resource",
+      "category": "learning",
+      "title": "在课程与资料中选出合适路径",
+      "description": "用先修要求、练习质量和可投入时间筛选。",
+      "tags": [
+        "课程推荐",
+        "教材",
+        "学习资源",
+        "course selection"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "oxford"
+      ],
+      "variables": [
+        "技能",
+        "基础、时间与预算",
+        "候选资源或可联网范围"
+      ],
+      "template": "我想学【技能】，已有【基础、时间与预算】。比较【候选资源或可联网范围】中的适合项，按先修、时长、实际练习和能完成的作品列证据。给先试的第一节、选择另一资源的条件和核对入口。"
+    },
+    {
       "id": "how-to",
       "category": "planning",
       "title": "拆解一个操作步骤",
@@ -1298,6 +1770,166 @@
         "已有尝试"
       ],
       "template": "我遇到【故障表现】，设备或流程是【型号与环境】，已试【已有尝试】。从低成本、可逆的检查开始，每项说明结果如何区分原因。标出哪些进一步检查依赖官方说明或维修人员。"
+    },
+    {
+      "id": "shopping-shortlist",
+      "category": "planning",
+      "title": "把购买需求转成可验证的候选清单",
+      "description": "按硬约束、总成本和售后逐一筛选。",
+      "tags": [
+        "购物",
+        "选购",
+        "购买",
+        "shopping shortlist"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "oxford"
+      ],
+      "variables": [
+        "物品或用途",
+        "预算、兼容性、尺寸和地区"
+      ],
+      "template": "为【物品或用途】做购物清单，硬约束为【预算、兼容性、尺寸和地区】。先列淘汰条件，再比较三个可查候选的同版本价格、消耗品及保修成本。给查询日期、官方出处和下单前最后一个验证动作。"
+    },
+    {
+      "id": "trip-disruption",
+      "category": "planning",
+      "title": "准备行程变动时的替代方案",
+      "description": "按时间、费用和可达性重排。",
+      "tags": [
+        "航班改签",
+        "天气备选",
+        "travel disruption"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ai-home",
+        "google"
+      ],
+      "variables": [
+        "原行程",
+        "变化",
+        "剩余时间、预算和同行人"
+      ],
+      "template": "【原行程】因【变化】无法照常进行。根据【剩余时间、预算和同行人】，给保守版和可扩展版两套安排。分别列需要取消、替换和重新核实的事项，提供票务或场馆的官方入口。"
+    },
+    {
+      "id": "event-plan",
+      "category": "planning",
+      "title": "把聚会或活动拆成执行表",
+      "description": "从时间、人员、物资到联络安排。",
+      "tags": [
+        "聚会",
+        "活动",
+        "婚礼",
+        "event planning"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ai-home",
+        "ms",
+        "google"
+      ],
+      "variables": [
+        "活动类型和目标",
+        "参与人数和需求",
+        "地点、日期和资源"
+      ],
+      "template": "策划【活动类型和目标】给【参与人数和需求】，限制是【地点、日期和资源】。交付倒排时间表、当日流程、物资与分工，以及天气或缺席的备选。标出凡需确认开放时间或预订的项目。"
+    },
+    {
+      "id": "recipe-scale",
+      "category": "planning",
+      "title": "按人数、容器和食材改写食谱",
+      "description": "让调整后的份量和时间能直接使用。",
+      "tags": [
+        "菜谱",
+        "食谱换算",
+        "换算",
+        "烹饪",
+        "recipe scaling"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "ai-home",
+        "frank"
+      ],
+      "variables": [
+        "原食谱",
+        "人数、设备与食材约束"
+      ],
+      "template": "把【原食谱】改成适合【人数、设备与食材约束】的版本。给改后用量、需要分批的步骤和用肉眼判断完成的信号。把不能简单按比例调整的调味、温度或烹饪时间单列。"
+    },
+    {
+      "id": "appointment-prep",
+      "category": "planning",
+      "title": "整理预约前需要带的信息",
+      "description": "把材料、变化时间线和问题写给服务人员。",
+      "tags": [
+        "预约",
+        "咨询准备",
+        "就诊前",
+        "appointment checklist"
+      ],
+      "evidence": "editorial",
+      "sources": [
+        "ai-home",
+        "four"
+      ],
+      "variables": [
+        "预约类型和地点",
+        "相关记录和问题"
+      ],
+      "template": "我准备去【预约类型和地点】，目前有【相关记录和问题】。帮我整理一页可带去的材料清单、按时间排列的客观记录，以及必须当面问的三个问题。分清已经准备、待确认与当天携带的项目。"
+    },
+    {
+      "id": "journal-reflection",
+      "category": "planning",
+      "title": "把零散日记整理成一周观察",
+      "description": "区分发生的事实、主观感受和想尝试的调整。",
+      "tags": [
+        "日记",
+        "反思",
+        "生活复盘",
+        "journaling"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "four",
+        "openai",
+        "frank"
+      ],
+      "variables": [
+        "日记片段或一周记录",
+        "我想弄清的问题"
+      ],
+      "template": "根据【日记片段或一周记录】，围绕【我想弄清的问题】找反复出现的情境、感受和做法。用具体片段支持观察，保留可能的其他解释。最后给两道写给自己的问题和一个可以下周试的小调整。"
+    },
+    {
+      "id": "sort-out-concern",
+      "category": "planning",
+      "title": "在一件烦心事里分清事实和下一步",
+      "description": "让用户自己选择希望思考或行动的方向。",
+      "tags": [
+        "倾诉",
+        "自我整理",
+        "厘清",
+        "reflection"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "oxford",
+        "four",
+        "openai"
+      ],
+      "variables": [
+        "让我在意的事",
+        "事实和感受"
+      ],
+      "template": "我想梳理【让我在意的事】，目前已知【事实和感受】。先简短复述我的处境，然后一次只问一个开放问题，帮我区分事实、担心和还不知道的部分。我准备好后再给几种低压力的下一步，结果由我选择。"
     },
     {
       "id": "meeting-notes",
@@ -1551,6 +2183,117 @@
         "受影响人群"
       ],
       "template": "把【变更内容和时间】写成给【受影响人群】的公告。写清发生了什么、谁需要做什么、何时完成，以及如何确认操作成功。按受众的不同动作分段，列已知影响与帮助入口。"
+    },
+    {
+      "id": "stakeholder-map",
+      "category": "office",
+      "title": "找出计划中要通知和协调的人",
+      "description": "按职责、决定权与信息需要安排沟通。",
+      "tags": [
+        "干系人",
+        "协作",
+        "stakeholder map"
+      ],
+      "evidence": "example",
+      "sources": [
+        "amplitude",
+        "ms",
+        "copilot"
+      ],
+      "variables": [
+        "项目计划与团队职责"
+      ],
+      "template": "根据【项目计划与团队职责】梳理干系人。列负责决定、实际执行、提供信息和需知会的角色，写他们需要知道什么、何时联系、希望得到什么反馈。职责不明时给待确认问题。"
+    },
+    {
+      "id": "async-update",
+      "category": "office",
+      "title": "把杂乱消息写成异步同步",
+      "description": "在聊天渠道让大家知道变化和需要回应的事。",
+      "tags": [
+        "异步",
+        "Slack",
+        "团队消息",
+        "async update"
+      ],
+      "evidence": "example",
+      "sources": [
+        "anthskills",
+        "amplitude",
+        "ms"
+      ],
+      "variables": [
+        "进展和讨论记录",
+        "团队渠道"
+      ],
+      "template": "把【进展和讨论记录】写成给【团队渠道】的简洁更新。先给变化或阻碍，再给需要谁在什么时候作什么决定。将背景、证据和业务影响分开表达，用链接文本标明原始材料。"
+    },
+    {
+      "id": "retro-plan",
+      "category": "office",
+      "title": "主持一场可落实的项目复盘",
+      "description": "从事实和原因分析落实到下一步。",
+      "tags": [
+        "复盘",
+        "事后回顾",
+        "retrospective",
+        "postmortem"
+      ],
+      "evidence": "example",
+      "sources": [
+        "amplitude",
+        "bmad"
+      ],
+      "variables": [
+        "项目和已知情况",
+        "时长"
+      ],
+      "template": "为【项目和已知情况】设计一场【时长】复盘。安排事实时间线、有效做法、改进点和行动确认。给两道避免归因到个人的引导问题，并为每个行动留出负责人、截止日期和验证信号。"
+    },
+    {
+      "id": "onboarding-plan",
+      "category": "office",
+      "title": "给新同事安排第一周上手计划",
+      "description": "使权限、入口和第一个成果能依次完成。",
+      "tags": [
+        "入职",
+        "新人",
+        "岗位培训",
+        "onboarding"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ms",
+        "anthskills",
+        "amplitude"
+      ],
+      "variables": [
+        "岗位和背景",
+        "知识库、联系人、权限与环境"
+      ],
+      "template": "为【岗位和背景】设计第一周上手计划，现有资源为【知识库、联系人、权限与环境】。按天列读什么、找谁、完成什么可检查成果。标出必须提前开通的权限和可以等的事项。"
+    },
+    {
+      "id": "process-exception-log",
+      "category": "office",
+      "title": "从异常记录中整理流程问题",
+      "description": "查出频繁的绕行、耗时和升级原因。",
+      "tags": [
+        "流程异常",
+        "例外",
+        "持续改进",
+        "process exception"
+      ],
+      "evidence": "example",
+      "sources": [
+        "amplitude",
+        "fabric"
+      ],
+      "variables": [
+        "异常记录或工单",
+        "流程范围"
+      ],
+      "template": "检查【异常记录或工单】中的【流程范围】。逐类列触发条件、频率、额外耗时、临时处理方式与依据。区分正常例外和流程缺陷，为优先项给一个不改变主流程的验证试点。"
     },
     {
       "id": "extract-fields",
@@ -1807,6 +2550,118 @@
       "template": "分析【问卷题目与答卷】，回答【研究问题】。对每题注明有效分母、多选或缺失处理，再给比例及分组差异；对开放题写分类规则和代表例。样本过小时用人数并提示解释限制。"
     },
     {
+      "id": "funnel-analysis",
+      "category": "data",
+      "title": "分析转换漏斗在哪些阶段流失",
+      "description": "检查分母、同一用户旅程和统计窗口。",
+      "tags": [
+        "漏斗",
+        "转化率",
+        "funnel analysis"
+      ],
+      "evidence": "example",
+      "sources": [
+        "amplitude",
+        "marketing",
+        "gemini"
+      ],
+      "variables": [
+        "事件数据和字段说明",
+        "目标漏斗",
+        "可比较分组"
+      ],
+      "template": "用【事件数据和字段说明】分析【目标漏斗】。先定义入口、顺序、去重和转化时间窗，再列每阶段人数、转化率和掉队人数。按【可比较分组】做一次分层，标出无法判定原因的流失。"
+    },
+    {
+      "id": "cohort-retention",
+      "category": "data",
+      "title": "建立分群留存表",
+      "description": "明确首日事件、回访事件与未成熟群组。",
+      "tags": [
+        "留存",
+        "分群",
+        "cohort retention"
+      ],
+      "evidence": "example",
+      "sources": [
+        "amplitude",
+        "marketing"
+      ],
+      "variables": [
+        "事件表与日期范围",
+        "目标留存"
+      ],
+      "template": "根据【事件表与日期范围】计算【目标留存】。先写入群事件、返回事件、计算粒度和去重规则，再输出分群表。对观测窗口不完整的周期保留空白，提供两条用于手算核对的样本。"
+    },
+    {
+      "id": "anomaly-triage",
+      "category": "data",
+      "title": "排查图表突然变化的原因",
+      "description": "先区分真实变化与仪表或采集故障。",
+      "tags": [
+        "异常",
+        "监控",
+        "指标波动",
+        "anomaly"
+      ],
+      "evidence": "example",
+      "sources": [
+        "gemini",
+        "amplitude",
+        "fabric"
+      ],
+      "variables": [
+        "指标",
+        "日期与幅度",
+        "事件、发布与数据情况"
+      ],
+      "template": "【指标】在【日期与幅度】发生突变，已知有【事件、发布与数据情况】。先检查口径、采集完整性和对照维度，按可验证性排序候选原因。给最小查询和下一步判断规则。"
+    },
+    {
+      "id": "dashboard-review",
+      "category": "data",
+      "title": "评审现有数据看板是否能支持决策",
+      "description": "从读者要做的决定审查指标与布局。",
+      "tags": [
+        "看板",
+        "仪表盘",
+        "dashboard review"
+      ],
+      "evidence": "example",
+      "sources": [
+        "amplitude",
+        "google"
+      ],
+      "variables": [
+        "看板或截图",
+        "受众",
+        "决策"
+      ],
+      "template": "评审【看板或截图】能否让【受众】判断【决策】。逐项指出指标意义、更新频率、分母、异常显示和可执行动作的缺口。给最重要的三项修改并说明如何验证读者更易找到答案。"
+    },
+    {
+      "id": "sample-data",
+      "category": "data",
+      "title": "为测试生成一组代表性假数据",
+      "description": "覆盖格式正常、边界值、缺失与重复。",
+      "tags": [
+        "模拟数据",
+        "数据样例",
+        "synthetic data"
+      ],
+      "evidence": "example",
+      "sources": [
+        "oai-cookbook",
+        "ms-base",
+        "anthskills"
+      ],
+      "variables": [
+        "字段和约束",
+        "用途和规模"
+      ],
+      "template": "按【字段和约束】生成【用途和规模】的虚构数据。包含典型值、边界值、空值及一次可辨认的重复，用可导入格式输出。每类边界附预期校验结果，使用明显虚构的标识和信息。"
+    },
+    {
       "id": "debug-error",
       "category": "coding",
       "title": "定位报错并做最小修复",
@@ -2057,6 +2912,118 @@
         "体验或资源目标"
       ],
       "template": "【代码或链路】在【可复现负载】下偏慢，目标为【体验或资源目标】。定义当前基线和观察指标，安排最少的测量来定位耗时部分。给实验表、可能干扰项和改动后的相同口径复测方式。"
+    },
+    {
+      "id": "ci-failure",
+      "category": "coding",
+      "title": "定位 CI 失败并整理可验证的修复",
+      "description": "从日志找到首个有效错误和最短验证。",
+      "tags": [
+        "CI",
+        "CI 失败",
+        "GitHub Actions",
+        "构建失败",
+        "build failure"
+      ],
+      "evidence": "example",
+      "sources": [
+        "oaiskills",
+        "superpowers",
+        "copilot"
+      ],
+      "variables": [
+        "CI 日志、提交与命令"
+      ],
+      "template": "分析【CI 日志、提交与命令】。找出第一个真实失败，区分后续错误是否由它引起。给与 CI 尽量一致的本地复现方法、最小改动建议、验证命令及需检查的配置差异。"
+    },
+    {
+      "id": "dependency-update",
+      "category": "coding",
+      "title": "检查依赖升级的实际影响",
+      "description": "连通版本说明、调用点和升级后检查。",
+      "tags": [
+        "依赖升级",
+        "包版本",
+        "API变更",
+        "dependency update"
+      ],
+      "evidence": "example",
+      "sources": [
+        "copilot",
+        "superpowers"
+      ],
+      "variables": [
+        "包和版本",
+        "目标版本",
+        "代码库与约束"
+      ],
+      "template": "评估将【包和版本】升级到【目标版本】对【代码库与约束】的影响。用官方变更说明和实际调用点标出必须修改的接口，列兼容风险、验证命令和回退办法。列出与本次无关的重构。"
+    },
+    {
+      "id": "accessibility-review",
+      "category": "coding",
+      "title": "在真实页面找无障碍问题",
+      "description": "用可复现步骤检查键盘、标注和对比度。",
+      "tags": [
+        "无障碍",
+        "键盘",
+        "屏幕阅读器",
+        "accessibility"
+      ],
+      "evidence": "example",
+      "sources": [
+        "anthskills",
+        "oaiskills"
+      ],
+      "variables": [
+        "页面或组件",
+        "支持设备与场景"
+      ],
+      "template": "评估【页面或组件】在【支持设备与场景】下的无障碍。检查键盘路径、焦点顺序、可读名称和状态反馈，记录每项复现与影响。为可修复项给最小改法和可手动复验的标准。"
+    },
+    {
+      "id": "refine-error-state",
+      "category": "coding",
+      "title": "设计一个可恢复的错误状态",
+      "description": "帮用户理解结果、保留输入并采取下一步。",
+      "tags": [
+        "错误提示",
+        "重试",
+        "UI error",
+        "error state"
+      ],
+      "evidence": "example",
+      "sources": [
+        "bmad",
+        "copilot",
+        "anthskills"
+      ],
+      "variables": [
+        "功能和失败场景"
+      ],
+      "template": "为【功能和失败场景】设计错误处理。逐项写用户看到什么、哪些内容保留、可重试条件、何时转人工和需记的诊断信息。给离线、中断及部分成功的预期行为。"
+    },
+    {
+      "id": "release-check",
+      "category": "coding",
+      "title": "做一次发布前检查",
+      "description": "明确版本、主要变化、验证及回退条件。",
+      "tags": [
+        "发版",
+        "上线",
+        "部署检查",
+        "release check"
+      ],
+      "evidence": "example",
+      "sources": [
+        "superpowers",
+        "bmad",
+        "oaiskills"
+      ],
+      "variables": [
+        "版本变更和目标环境"
+      ],
+      "template": "根据【版本变更和目标环境】做发布检查表。列可执行前置条件、从用户入口验收的主要路径、异常信号和回退动作。每项写可检查的证据，未运行的步骤保留待验证。"
     },
     {
       "id": "image-brief",
@@ -2320,6 +3287,140 @@
       "template": "为【画面或分镜】写一段【目标时长和语气】的旁白。按镜头分段，留停顿和画面独立叙述的空间。标注需要校对的发音，估计朗读时长并指出可删的句子。"
     },
     {
+      "id": "video-edit-plan",
+      "category": "creative",
+      "title": "从已有素材规划剪辑节奏",
+      "description": "用具体素材和时码安排信息与转场。",
+      "tags": [
+        "剪辑",
+        "节奏",
+        "视频",
+        "video edit"
+      ],
+      "evidence": "example",
+      "sources": [
+        "gemini",
+        "veo"
+      ],
+      "variables": [
+        "素材清单、时码和故事目标",
+        "成片时长"
+      ],
+      "template": "把【素材清单、时码和故事目标】整理成【成片时长】剪辑方案。逐段写取用素材、秒数、信息任务、声音和转场。标出剪掉不影响理解的片段及仍需补拍的动作。"
+    },
+    {
+      "id": "brand-visual",
+      "category": "creative",
+      "title": "做一张可复用的视觉方向卡",
+      "description": "用规则统一色彩、材质、留白和摄影。",
+      "tags": [
+        "视觉风格",
+        "品牌",
+        "art direction"
+      ],
+      "evidence": "example",
+      "sources": [
+        "anthskills",
+        "nano",
+        "midjourney"
+      ],
+      "variables": [
+        "品牌与受众",
+        "参考图或方向"
+      ],
+      "template": "根据【品牌与受众】和【参考图或方向】制定可复用的视觉卡。描述调色、画面密度、光线、材质、留白和需要保持的特征。给一个合格示例的文字描述和两个常见跑偏及修正。"
+    },
+    {
+      "id": "create-alternate-endings",
+      "category": "creative",
+      "title": "为同一故事设计分歧结局",
+      "description": "让不同结局来自角色选择而非巧合。",
+      "tags": [
+        "结尾",
+        "故事选择",
+        "受众反应",
+        "alternate ending"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "prompts-chat"
+      ],
+      "variables": [
+        "现有故事或大纲",
+        "希望变化的感觉"
+      ],
+      "template": "基于【现有故事或大纲】设计【希望变化的感觉】的三个结局。逐个写关键决定、代价、回收的伏笔，以及需要改动的前文细节。推荐一个与人物动机最一致的方向。"
+    },
+    {
+      "id": "sound-plan",
+      "category": "creative",
+      "title": "为短片编出声音清单",
+      "description": "把对白、环境、效果和音乐的任务说清。",
+      "tags": [
+        "声音设计",
+        "音效",
+        "配乐",
+        "sound design"
+      ],
+      "evidence": "example",
+      "sources": [
+        "veo",
+        "oaiskills"
+      ],
+      "variables": [
+        "分镜或粗剪说明",
+        "播放场景"
+      ],
+      "template": "根据【分镜或粗剪说明】为【播放场景】设计声音表。逐场标注对白、环境、关键音效和音乐进入点，说明声音如何帮助理解。列录制、授权素材或仍需确认的来源。"
+    },
+    {
+      "id": "visual-critique",
+      "category": "creative",
+      "title": "按传播目标评审一张设计稿",
+      "description": "从阅读路径、层级和具体改动给反馈。",
+      "tags": [
+        "设计评审",
+        "海报",
+        "产品截图",
+        "design critique"
+      ],
+      "evidence": "example",
+      "sources": [
+        "anthskills",
+        "oaiskills",
+        "marketing"
+      ],
+      "variables": [
+        "稿件或截图",
+        "信息与行动",
+        "使用环境"
+      ],
+      "template": "评审【稿件或截图】是否传递【信息与行动】，主要受众和设备是【使用环境】。先复述第一眼看到的信息，再指出三处最影响读懂或行动的问题。每项给位置、改法、可比较用例。"
+    },
+    {
+      "id": "text-game",
+      "category": "creative",
+      "title": "一起玩一局文字推理游戏",
+      "description": "让线索可追踪、难度适当，按回合推进。",
+      "tags": [
+        "文字游戏",
+        "推理谜题",
+        "互动",
+        "text game"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "prompts-chat"
+      ],
+      "variables": [
+        "题材和难度",
+        "回合数"
+      ],
+      "template": "主持一局【题材和难度】的文字推理游戏，时长约【回合数】。给清楚目标、已知线索和能尝试的行动，等我每轮回答再继续。记录我已经发现的证据。直到我请求揭晓或结束，才说明答案和推理过程。"
+    },
+    {
       "id": "resume-tailor",
       "category": "career",
       "title": "按目标岗位调整简历",
@@ -2492,6 +3593,117 @@
       "template": "写一封给【对方和关系】的交流邀约，我希望了解【具体问题】，背景是【真实连接点】。先说明来意，提出一个低负担的请求，并给两种时间安排或书面回复选项。"
     },
     {
+      "id": "resume-bullets",
+      "category": "career",
+      "title": "把真实项目经历压成简历要点",
+      "description": "写清贡献、做法与可核实结果。",
+      "tags": [
+        "简历要点",
+        "成就",
+        "履历",
+        "resume bullet"
+      ],
+      "evidence": "example",
+      "sources": [
+        "resume",
+        "career-academy",
+        "frank"
+      ],
+      "variables": [
+        "经历与实际证据",
+        "岗位"
+      ],
+      "template": "把【经历与实际证据】写成面向【岗位】的简历要点。每项用动词开头，说明负责对象、关键做法和结果，区分个人贡献与团队结果。缺失数字写成待补位，列可核实的替代指标。"
+    },
+    {
+      "id": "company-interview-research",
+      "category": "career",
+      "title": "准备面试前的公司调研",
+      "description": "了解产品、市场与岗位可能解决的问题。",
+      "tags": [
+        "公司调研",
+        "面试准备",
+        "company research"
+      ],
+      "evidence": "example",
+      "sources": [
+        "career-academy",
+        "amplitude",
+        "gptr"
+      ],
+      "variables": [
+        "目标公司与岗位",
+        "我需要弄清的事"
+      ],
+      "template": "为【目标公司与岗位】做面试前调研，关注【我需要弄清的事】。从公司公告、产品资料、岗位说明提取事实，列时间与来源。给三个基于证据的问题和两项面试中才能确认的假设。"
+    },
+    {
+      "id": "skill-gap-plan",
+      "category": "career",
+      "title": "把岗位要求变成补技能计划",
+      "description": "用小作品验证技能，并明确判断标准。",
+      "tags": [
+        "能力差距",
+        "技能",
+        "转岗",
+        "skills gap"
+      ],
+      "evidence": "example",
+      "sources": [
+        "career-academy",
+        "resume"
+      ],
+      "variables": [
+        "目标岗位要求",
+        "现有证据",
+        "时间预算"
+      ],
+      "template": "比较【目标岗位要求】和【现有证据】。找出最影响面试的一到三个缺口，为每项给可在【时间预算】内练习的任务、可展示产物和自检方法。"
+    },
+    {
+      "id": "offer-compare",
+      "category": "career",
+      "title": "比较不同工作机会的条件",
+      "description": "让现金收入、工作内容和风险可以对照。",
+      "tags": [
+        "工作机会",
+        "Offer对比",
+        "offer comparison"
+      ],
+      "evidence": "editorial",
+      "sources": [
+        "career-academy"
+      ],
+      "variables": [
+        "明确写出的机会条件",
+        "个人偏好与限制"
+      ],
+      "template": "比较【明确写出的机会条件】，我的优先级是【个人偏好与限制】。按职责、成长、工作地点、固定与不确定待遇、决策时限做表，注明假设和出处。把需招聘方书面确认的问题列为下一步。"
+    },
+    {
+      "id": "profile-summary",
+      "category": "career",
+      "title": "写一段基于事实的职业简介",
+      "description": "让读者迅速知道你能解决什么问题。",
+      "tags": [
+        "职业简介",
+        "自我介绍",
+        "LinkedIn",
+        "professional bio"
+      ],
+      "evidence": "example",
+      "sources": [
+        "resume",
+        "career-academy",
+        "frank"
+      ],
+      "variables": [
+        "经历和成果",
+        "发布处及读者"
+      ],
+      "template": "根据【经历和成果】为【发布处及读者】写职业简介。第一句说擅长解决的实际问题，再给两个能支撑定位的具体例子。生成短版和长版，避免补造职位、项目或资质。"
+    },
+    {
       "id": "discovery-interview",
       "category": "product",
       "title": "设计一份用户访谈提纲",
@@ -2659,6 +3871,114 @@
         "产品结果"
       ],
       "template": "从【客服工单】提炼影响【产品结果】的主要问题。合并同类项，保留样本文本、出现次数、受影响用户、复现条件和影响程度。区分可以当天修的事项与需要先调查的事项。"
+    },
+    {
+      "id": "market-scan",
+      "category": "product",
+      "title": "为产品方向盘点市场与替代方案",
+      "description": "区分直接竞争、间接替代和自行完成。",
+      "tags": [
+        "市场调研",
+        "竞品",
+        "market scan"
+      ],
+      "evidence": "example",
+      "sources": [
+        "amplitude",
+        "marketing",
+        "gptr"
+      ],
+      "variables": [
+        "用户任务和市场范围"
+      ],
+      "template": "围绕【用户任务和市场范围】做市场扫描。分别找直接产品、间接替代和用户自建办法，按受众、承诺、证据与缺点做表。标注信息日期，指出一个影响市场定位的未知。"
+    },
+    {
+      "id": "mvp-scope",
+      "category": "product",
+      "title": "把设想收敛到首个可验证版本",
+      "description": "用最小范围判断用户是否会用。",
+      "tags": [
+        "MVP",
+        "范围",
+        "优先",
+        "scope"
+      ],
+      "evidence": "example",
+      "sources": [
+        "amplitude",
+        "bmad",
+        "copilot"
+      ],
+      "variables": [
+        "想法、目标用户和证据",
+        "时间、数据和渠道"
+      ],
+      "template": "根据【想法、目标用户和证据】提议一个最小可用版本，现实约束为【时间、数据和渠道】。写主要路径、必要交付、可暂缓功能和三条验收条件。给最能推翻该方案的快速测试。"
+    },
+    {
+      "id": "user-journey-map",
+      "category": "product",
+      "title": "从观察材料还原用户旅程",
+      "description": "找到实际入口、交接点和高摩擦步。",
+      "tags": [
+        "用户旅程",
+        "体验",
+        "journey map"
+      ],
+      "evidence": "example",
+      "sources": [
+        "amplitude",
+        "bmad"
+      ],
+      "variables": [
+        "用户材料",
+        "目标任务"
+      ],
+      "template": "把【用户材料】整理成【目标任务】的旅程图。每步列用户目标、行动、工具、困难、证据及完成信号。突出对最终结果影响最大的断点，并给可观察的修复指标。"
+    },
+    {
+      "id": "usability-test-plan",
+      "category": "product",
+      "title": "为一个功能设计可用性测试",
+      "description": "让参与者完成任务而不靠提示。",
+      "tags": [
+        "可用性",
+        "用户测试",
+        "UX test"
+      ],
+      "evidence": "example",
+      "sources": [
+        "amplitude",
+        "anthskills"
+      ],
+      "variables": [
+        "原型或功能",
+        "目标用户"
+      ],
+      "template": "为【原型或功能】设计由【目标用户】完成的可用性测试。给三个贴近真实环境的任务、成功标准、观察项和追问。区分观察到的操作、访问反馈和主持人的解释。"
+    },
+    {
+      "id": "release-scope-review",
+      "category": "product",
+      "title": "检查发布范围能否满足用户目标",
+      "description": "把未覆盖场景、用户影响和验收对应起来。",
+      "tags": [
+        "产品验收",
+        "发布范围",
+        "release scope"
+      ],
+      "evidence": "example",
+      "sources": [
+        "bmad",
+        "amplitude",
+        "copilot"
+      ],
+      "variables": [
+        "计划发布内容",
+        "目标和用户路径"
+      ],
+      "template": "审查【计划发布内容】与【目标和用户路径】。做需求、实现、可观察验收和证据的对照；标出路径断点及受影响用户。提出必须补齐、可按说明交付和应另做验证的事项。"
     },
     {
       "id": "give-feedback",
@@ -2837,6 +4157,117 @@
         "下一步时间"
       ],
       "template": "根据【往来记录】为【收件人】写一条跟进消息。两三句交代背景，一个句子写清希望确认的事和【下一步时间】。若存在多种可能状态，给对方一个容易回复的选项。"
+    },
+    {
+      "id": "ask-for-help",
+      "category": "communication",
+      "title": "把卡住的事写成别人能回答的问题",
+      "description": "说明已试动作、证据和希望对方帮什么。",
+      "tags": [
+        "求助",
+        "提问",
+        "ask for help"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ms",
+        "google"
+      ],
+      "variables": [
+        "问题、已试动作和证据",
+        "可协助的人"
+      ],
+      "template": "将【问题、已试动作和证据】整理成给【可协助的人】的一则求助。首句写希望得到的具体帮助，再给最小背景、已排除的原因、所需时间与能同步提供的资料。"
+    },
+    {
+      "id": "ask-for-feedback",
+      "category": "communication",
+      "title": "向他人请求聚焦的反馈",
+      "description": "限定对象、类型和可回答的时间。",
+      "tags": [
+        "征求反馈",
+        "审阅",
+        "feedback request"
+      ],
+      "evidence": "example",
+      "sources": [
+        "anthskills",
+        "ms",
+        "google"
+      ],
+      "variables": [
+        "材料或决定",
+        "反馈人"
+      ],
+      "template": "为【材料或决定】向【反馈人】请求反馈。交代材料现在的状态和可改范围，只问三项可具体回应的问题。给期望反馈形式、期限和最重要的一项。"
+    },
+    {
+      "id": "one-on-one",
+      "category": "communication",
+      "title": "准备一次一对一沟通",
+      "description": "把进展、被阻塞的事和对方关切放到议程。",
+      "tags": [
+        "一对一",
+        "管理",
+        "1-on-1"
+      ],
+      "evidence": "example",
+      "sources": [
+        "amplitude",
+        "ms"
+      ],
+      "variables": [
+        "对象和关系",
+        "时长",
+        "最近进展和待讨论问题"
+      ],
+      "template": "为与【对象和关系】的一对一准备【时长】议程。根据【最近进展和待讨论问题】，排出对方可能关心的事项、一个开放问题、要请求的帮助和最后确认的动作。"
+    },
+    {
+      "id": "escalate-blocker",
+      "category": "communication",
+      "title": "提交一条需要决定的升级说明",
+      "description": "说清影响、试过的操作与需要负责人决定什么。",
+      "tags": [
+        "升级",
+        "阻塞",
+        "决策请求",
+        "escalation"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ms",
+        "amplitude",
+        "anthskills"
+      ],
+      "variables": [
+        "决策人或团队",
+        "阻塞及影响",
+        "动作和结果"
+      ],
+      "template": "向【决策人或团队】说明【阻塞及影响】，我们已尝试【动作和结果】。给需要决定的选项、最迟时间、各方案影响和我的建议。把事实与预测分别写明。"
+    },
+    {
+      "id": "perspective-rehearsal",
+      "category": "communication",
+      "title": "从不同视角试读一条重要消息",
+      "description": "提前发现可能被误解的承诺或语气。",
+      "tags": [
+        "换位思考",
+        "误解",
+        "敏感沟通",
+        "perspective taking"
+      ],
+      "evidence": "editorial",
+      "sources": [
+        "ms",
+        "google"
+      ],
+      "variables": [
+        "各读者角色与关切",
+        "消息"
+      ],
+      "template": "从【各读者角色与关切】分别解读【消息】，指出每个角色可能误解哪一句、为什么以及会采取什么动作。给最小改写，保留已经承诺的事，并推荐一个发送前核实问题。"
     },
     {
       "id": "repair-prompt",
@@ -3020,6 +4451,1316 @@
         "允许的工具和材料"
       ],
       "template": "把【重复任务及步骤】设计成半自动工作流，使用【允许的工具和材料】。逐步列交付物、完成信号、失败回退和恢复所需状态。指出提交、发送或覆盖前需要由人查看哪些信息。"
+    },
+    {
+      "id": "decompose-ai-task",
+      "category": "prompt-workflows",
+      "title": "将复杂请求拆成可验证的子任务",
+      "description": "明确各步输入、输出和顺序依赖。",
+      "tags": [
+        "任务分解",
+        "提示链",
+        "prompt chain"
+      ],
+      "evidence": "example",
+      "sources": [
+        "msagents",
+        "superpowers",
+        "bmad"
+      ],
+      "variables": [
+        "复杂任务",
+        "上下文、工具与时间"
+      ],
+      "template": "把【复杂任务】拆成若干可以单独验收的步骤，已知约束是【上下文、工具与时间】。为每步列输入、输出、依赖、验收和错误处理，标出可以并行的部分和应由人决定的分岔。"
+    },
+    {
+      "id": "design-regression-set",
+      "category": "prompt-workflows",
+      "title": "建立查提示词回归的样本集",
+      "description": "保留曾失败和高价值的代表用例。",
+      "tags": [
+        "回归",
+        "回归样本",
+        "样本集",
+        "regression dataset"
+      ],
+      "evidence": "example",
+      "sources": [
+        "openai-evals",
+        "oai-cookbook",
+        "prompt-tutorial"
+      ],
+      "variables": [
+        "提示词或工作流",
+        "任务分布与历史失败"
+      ],
+      "template": "为【提示词或工作流】建立回归集，以【任务分布与历史失败】为线索。包含日常、边界、材料缺失和矛盾样本。每条写输入、最小可接受行为、关键失败及加入原因，留出未参与优化的验证样本。"
+    },
+    {
+      "id": "tool-selection",
+      "category": "prompt-workflows",
+      "title": "判断任务应该用哪种 AI 能力",
+      "description": "先决定是否需要搜索、文件读取、计算或直接回答。",
+      "tags": [
+        "工具选择",
+        "能力边界",
+        "tool selection"
+      ],
+      "evidence": "example",
+      "sources": [
+        "msagents",
+        "oaiskills",
+        "oai-cookbook"
+      ],
+      "variables": [
+        "任务和输入",
+        "可用能力"
+      ],
+      "template": "对【任务和输入】选择【可用能力】中必要的工具。按必须拿到的证据、处理量、可验证输出和执行后果比较。给无需额外工具的最小路径，以及什么时候应升级到其他工具。"
+    },
+    {
+      "id": "evaluate-grounding",
+      "category": "prompt-workflows",
+      "title": "评测材料问答有没有证据支撑",
+      "description": "检查生成内容的引用与材料相关性。",
+      "tags": [
+        "有据回答",
+        "RAG评测",
+        "citation evaluation"
+      ],
+      "evidence": "example",
+      "sources": [
+        "openai-evals",
+        "msagents",
+        "gemini"
+      ],
+      "variables": [
+        "模型回答及参考材料"
+      ],
+      "template": "对【模型回答及参考材料】逐条评测。拆出可验证主张并找支持、矛盾或无出处的片段，标记引用是否对版。统计有出处且被支持的条目，写影响最大的一处问题和修复后的验收样例。"
+    },
+    {
+      "id": "batch-prompt-spec",
+      "category": "prompt-workflows",
+      "title": "把一次性指令写成批处理规范",
+      "description": "约定记录结构、边界处理和失败回收。",
+      "tags": [
+        "批处理",
+        "可复用",
+        "批量",
+        "prompt batch"
+      ],
+      "evidence": "example",
+      "sources": [
+        "oai-cookbook",
+        "msagents",
+        "anthskills"
+      ],
+      "variables": [
+        "单次 Prompt",
+        "输入样本与下游要求"
+      ],
+      "template": "把【单次 Prompt】参考【输入样本与下游要求】写成批处理规范。为每条输入定义稳定字段、输出模式、错误码、自检例和人工抽检点。给一条正常、缺资料和格式异常的预期结果。"
+    },
+    {
+      "id": "pdf-key-points",
+      "category": "files",
+      "title": "按页定位 PDF 中的重点",
+      "description": "用页码、图表或章节帮读者回查。",
+      "tags": [
+        "PDF",
+        "文档问答",
+        "pdf review"
+      ],
+      "evidence": "example",
+      "sources": [
+        "anthskills",
+        "oaiskills",
+        "gemini"
+      ],
+      "variables": [
+        "PDF 或页码范围",
+        "要核对的问题"
+      ],
+      "template": "阅读【PDF 或页码范围】，针对【要核对的问题】给结论和支持页码。表格注明列名和表脚，图片单独说明可见证据。未找到的项列检查范围和未知，不用常识填入文档事实。"
+    },
+    {
+      "id": "scan-ocr-verify",
+      "category": "files",
+      "title": "对扫描件做可核对的文字提取",
+      "description": "标出猜测字符、遗漏和不确定页。",
+      "tags": [
+        "扫描件",
+        "图片文字",
+        "OCR",
+        "text extraction"
+      ],
+      "evidence": "example",
+      "sources": [
+        "anthskills",
+        "markit",
+        "gemini"
+      ],
+      "variables": [
+        "扫描件或图片",
+        "范围与需要保留的格式"
+      ],
+      "template": "从【扫描件或图片】提取【范围与需要保留的格式】。按页和段落输出，保留数字、单位、姓名与原图顺序。把看不清的字符标为待核对；列可能影响后续使用的疑点、页码和位置。"
+    },
+    {
+      "id": "files-to-markdown",
+      "category": "files",
+      "title": "把多个来源转换成便于查找的 Markdown",
+      "description": "统一标题和记录来源，保留文档边界。",
+      "tags": [
+        "格式转换",
+        "Markdown",
+        "PDF转文本",
+        "document conversion"
+      ],
+      "evidence": "example",
+      "sources": [
+        "markit",
+        "anthskills",
+        "copilot"
+      ],
+      "variables": [
+        "文件包",
+        "目标用途"
+      ],
+      "template": "将【文件包】转换为供【目标用途】使用的 Markdown。每个原文件独立成节，保留标题层级、表头、列表及图说明。未能转换的表格、图或格式单列并定位到来源。"
+    },
+    {
+      "id": "document-redline",
+      "category": "files",
+      "title": "按编辑目标给 Word 文档做可复核修改",
+      "description": "标注修改位置、保留和待确认内容。",
+      "tags": [
+        "Word",
+        "修订",
+        "批注",
+        "redline"
+      ],
+      "evidence": "example",
+      "sources": [
+        "anthskills",
+        "ms"
+      ],
+      "variables": [
+        "文档和版本",
+        "限定编辑要求"
+      ],
+      "template": "在【文档和版本】中执行【限定编辑要求】。保持既有章节编号，在每个需改处给「位置 / 修改建议 / 理由」。若工具能标记修订，则交付修订版和清稿；需原作者判断的地方加简短批注。"
+    },
+    {
+      "id": "form-completion-review",
+      "category": "files",
+      "title": "检查表单是否已填完整",
+      "description": "识别漏项、格式问题和缺少附件的地方。",
+      "tags": [
+        "表单",
+        "附件",
+        "填表",
+        "form review"
+      ],
+      "evidence": "example",
+      "sources": [
+        "anthskills",
+        "gemini"
+      ],
+      "variables": [
+        "空白要求、已填表单与附件"
+      ],
+      "template": "检查【空白要求、已填表单与附件】。按字段列是否已填、格式、与已知材料的一致性及附件是否齐全。引用页码或字段名，将提交前必须补齐的事项与可选项分开。"
+    },
+    {
+      "id": "table-from-pdf",
+      "category": "files",
+      "title": "把 PDF 里的表格还原为可计算数据",
+      "description": "核对跨页表头、列单位和合计。",
+      "tags": [
+        "PDF表格",
+        "提取表格",
+        "CSV",
+        "pdf tables"
+      ],
+      "evidence": "example",
+      "sources": [
+        "anthskills",
+        "gemini",
+        "markit"
+      ],
+      "variables": [
+        "PDF 页码和表格",
+        "目标输出格式"
+      ],
+      "template": "提取【PDF 页码和表格】到【目标输出格式】。保留列名、单位、小计和脚注，检查跨页表头及合计。附三条可对照源页的示例，标记可能错位、无法识别或误判的单元格。"
+    },
+    {
+      "id": "format-result",
+      "category": "files",
+      "title": "按既有模板制作交付文档",
+      "description": "把素材放入正确结构并保留样式约束。",
+      "tags": [
+        "文档模板",
+        "格式",
+        "报告",
+        "document template"
+      ],
+      "evidence": "example",
+      "sources": [
+        "anthskills",
+        "ms",
+        "google"
+      ],
+      "variables": [
+        "参考模板",
+        "内容素材",
+        "交付文件"
+      ],
+      "template": "使用【参考模板】和【内容素材】制作【交付文件】。沿用标题层级、日期和表格格式，归置各段信息。缺失内容先占位，末尾列模板中仍需补充的栏目，并核对输出在正常阅读视图是否完整。"
+    },
+    {
+      "id": "review-deck",
+      "category": "files",
+      "title": "复查演示文稿的叙事和可读性",
+      "description": "逐页检查主旨、图表信息和文字布局。",
+      "tags": [
+        "演示审阅",
+        "PPT评审",
+        "slide QA"
+      ],
+      "evidence": "example",
+      "sources": [
+        "anthskills",
+        "fabric",
+        "ms"
+      ],
+      "variables": [
+        "演示文稿",
+        "受众与目的"
+      ],
+      "template": "评审【演示文稿】用于【受众与目的】的完成度。逐页记录主张、证据、读者疑问及布局问题。优先修正跳页、图表单位、文字溢出和结尾行动项，为最重要的两页提出改法。"
+    },
+    {
+      "id": "workbook-audit",
+      "category": "files",
+      "title": "检查交付前的电子表格",
+      "description": "把输入、公式、引用和输出沿线核对。",
+      "tags": [
+        "表格验收",
+        "Excel审计",
+        "spreadsheet QA"
+      ],
+      "evidence": "example",
+      "sources": [
+        "anthskills",
+        "google",
+        "ms"
+      ],
+      "variables": [
+        "电子表格",
+        "使用目的"
+      ],
+      "template": "检查【电子表格】是否满足【使用目的】。区分资料输入、计算表与最终输出，找错误引用、手写覆盖、断链和单位不一致。抽查三项结果，与源资料手算核对并记录对应单元格。"
+    },
+    {
+      "id": "organize-file-pack",
+      "category": "files",
+      "title": "把材料包整理成可查找的交付清单",
+      "description": "为每份文件写版本、用途和缺口。",
+      "tags": [
+        "文件归档",
+        "资料包",
+        "manifest"
+      ],
+      "evidence": "editorial",
+      "sources": [
+        "markit",
+        "anthskills"
+      ],
+      "variables": [
+        "文件列表与项目目标"
+      ],
+      "template": "根据【文件列表与项目目标】制作资料清单。每条写文件名、日期、版本、用途、是否重复和建议目录。标出关键文件缺失与同名不同版，给共享前需要核对的权限或范围。"
+    },
+    {
+      "id": "language-level-check",
+      "category": "language",
+      "title": "用短练习估计当前语言水平",
+      "description": "找出具体语法、词汇和理解缺口。",
+      "tags": [
+        "外语",
+        "分级",
+        "CEFR",
+        "level check"
+      ],
+      "evidence": "example",
+      "sources": [
+        "dialekt",
+        "language-prompts",
+        "academy"
+      ],
+      "variables": [
+        "目标语言",
+        "使用场景"
+      ],
+      "template": "用【目标语言】评估我在【使用场景】下目前的能力。给三段不同难度的理解与表达任务，等我答完再从流畅度、准确度和表达范围给粗略估计。举出每个判断对应的证据，并留一个下次可复查的小任务。"
+    },
+    {
+      "id": "correct-sentences",
+      "category": "language",
+      "title": "解释外语句子的常见错误",
+      "description": "优先修正影响理解的项目，再给练习。",
+      "tags": [
+        "语法",
+        "纠错",
+        "外语句子",
+        "grammar correction"
+      ],
+      "evidence": "example",
+      "sources": [
+        "dialekt",
+        "language-prompts"
+      ],
+      "variables": [
+        "我的外语句子",
+        "具体情境"
+      ],
+      "template": "评阅【我的外语句子】用于【具体情境】的表达。先说读者能理解的意思，指出两项最重要的问题，各给规则、修正版和可接受变体。最后让同一条规则出现在一个新练习里。"
+    },
+    {
+      "id": "vocabulary-in-context",
+      "category": "language",
+      "title": "在真实语境里学高频词组",
+      "description": "用搭配、反例和自测掌握用法。",
+      "tags": [
+        "背单词",
+        "词汇",
+        "搭配",
+        "vocabulary"
+      ],
+      "evidence": "example",
+      "sources": [
+        "dialekt",
+        "language-prompts",
+        "fabric"
+      ],
+      "variables": [
+        "材料或主题",
+        "水平"
+      ],
+      "template": "从【材料或主题】为【水平】挑十个可马上使用的词组。每个给语义、自然搭配、真实场景、混淆项和一句填空。把答案集中在结尾，并指出哪些表达偏口语或正式。"
+    },
+    {
+      "id": "reading-graded",
+      "category": "language",
+      "title": "把文章改成适合当前水平的阅读材料",
+      "description": "保留原文信息，控制词汇和句法难度。",
+      "tags": [
+        "分级阅读",
+        "外语",
+        "graded reading"
+      ],
+      "evidence": "example",
+      "sources": [
+        "dialekt",
+        "language-prompts"
+      ],
+      "variables": [
+        "目标语言材料",
+        "学习水平"
+      ],
+      "template": "把【目标语言材料】改写到【学习水平】。保留主要信息，控制句长和词汇，给少量必要注释。最后给三个理解问题和一个需要引用原句才能回答的问题。"
+    },
+    {
+      "id": "listen-practice",
+      "category": "language",
+      "title": "把音频或转录变成听力训练",
+      "description": "从大意到细节再到跟读。",
+      "tags": [
+        "听力",
+        "听写",
+        "跟读",
+        "listening"
+      ],
+      "evidence": "example",
+      "sources": [
+        "oaiskills",
+        "language-prompts",
+        "dialekt"
+      ],
+      "variables": [
+        "音频或带时码转录",
+        "等级和目标"
+      ],
+      "template": "用【音频或带时码转录】为【等级和目标】设计听力练习。依次给听大意、抓细节和跟读片段；把答案和关键原句放末尾。只有文字时给练习脚本，说明无法据此评估原音发音。"
+    },
+    {
+      "id": "speaking-feedback",
+      "category": "language",
+      "title": "复盘一段外语口语表达",
+      "description": "分别处理表达、用词和能验证的语音问题。",
+      "tags": [
+        "口语反馈",
+        "发音",
+        "speaking feedback"
+      ],
+      "evidence": "example",
+      "sources": [
+        "dialekt",
+        "language-prompts",
+        "oaiskills"
+      ],
+      "variables": [
+        "我的录音或逐字稿",
+        "目标听众"
+      ],
+      "template": "根据【我的录音或逐字稿】和【目标听众】评估口语。先指出两个影响理解的问题，各给修正和重说练习。有音频时标注可听到的语音证据，只有文字时聚焦表达组织和用词。"
+    },
+    {
+      "id": "localize-ui",
+      "category": "language",
+      "title": "翻译并本地化软件界面字符串",
+      "description": "保留变量、术语和字数限制。",
+      "tags": [
+        "UI本地化",
+        "i18n",
+        "界面翻译",
+        "locale"
+      ],
+      "evidence": "example",
+      "sources": [
+        "google",
+        "gemini",
+        "language-prompts"
+      ],
+      "variables": [
+        "界面字符串",
+        "目标地区语言",
+        "术语表、位置及字符限制"
+      ],
+      "template": "将【界面字符串】本地化为【目标地区语言】，使用【术语表、位置及字符限制】。保留键名、占位符、转义序列和标签。输出译文与有语境疑问的键，并为会超长的字符串给短版。"
+    },
+    {
+      "id": "terminology-glossary",
+      "category": "language",
+      "title": "从双语材料建立术语表",
+      "description": "规定首选译法、变体和使用范围。",
+      "tags": [
+        "术语表",
+        "翻译记忆",
+        "glossary"
+      ],
+      "evidence": "example",
+      "sources": [
+        "google",
+        "gemini",
+        "anthskills"
+      ],
+      "variables": [
+        "双语材料",
+        "行业和读者"
+      ],
+      "template": "对照【双语材料】为【行业和读者】提取术语表。逐项给原词、建议译法、解释、代表原句和适用范围。对关键冲突说明影响与待确认项，附三条示例用法。"
+    },
+    {
+      "id": "bilingual-qa",
+      "category": "language",
+      "title": "逐段核对译文和原文",
+      "description": "找出漏译、增译和术语不一致。",
+      "tags": [
+        "译文校对",
+        "校验",
+        "translation QA"
+      ],
+      "evidence": "example",
+      "sources": [
+        "google",
+        "fabric",
+        "language-prompts"
+      ],
+      "variables": [
+        "原文",
+        "译文",
+        "语言和使用场景"
+      ],
+      "template": "按段对照【原文】与【译文】，目标为【语言和使用场景】。记录漏译、误译、数字及术语差异，逐一附原句、现译、建议和严重度。语气喜好与事实问题分开归类。"
+    },
+    {
+      "id": "register-variants",
+      "category": "language",
+      "title": "按关系比较外语表达的语域",
+      "description": "判断在不同场合用哪一种说法。",
+      "tags": [
+        "礼貌度",
+        "正式",
+        "口语",
+        "register"
+      ],
+      "evidence": "example",
+      "sources": [
+        "dialekt",
+        "language-prompts"
+      ],
+      "variables": [
+        "要表达的含义",
+        "语言和地区",
+        "不同对象或关系"
+      ],
+      "template": "将【要表达的含义】转成【语言和地区】的三种表达，场景为【不同对象或关系】。逐条说明正式度、自然度和可能被误解的地方，并给一句对方可能使用的自然回复。"
+    },
+    {
+      "id": "value-proposition",
+      "category": "marketing",
+      "title": "为一个受众写出可验证的价值主张",
+      "description": "用可证明的差异和结果解释为何选择。",
+      "tags": [
+        "价值主张",
+        "定位",
+        "positioning",
+        "value proposition"
+      ],
+      "evidence": "example",
+      "sources": [
+        "signals-work",
+        "marketing",
+        "amplitude"
+      ],
+      "variables": [
+        "产品事实和现有证据",
+        "目标受众与场景"
+      ],
+      "template": "根据【产品事实和现有证据】为【目标受众与场景】制定价值主张。写用户当前做法、主要障碍、承诺结果与证据。给两种可区分的定位和一个能验证区分度的测试。"
+    },
+    {
+      "id": "content-calendar",
+      "category": "marketing",
+      "title": "围绕目标安排渠道内容日历",
+      "description": "让选题覆盖需求，再分配产出和检验。",
+      "tags": [
+        "内容运营",
+        "选题",
+        "content calendar"
+      ],
+      "evidence": "example",
+      "sources": [
+        "marketing",
+        "ms",
+        "google"
+      ],
+      "variables": [
+        "目标受众和传播目标",
+        "渠道与日期"
+      ],
+      "template": "为【目标受众和传播目标】安排【渠道与日期】的内容日历。每篇列任务、受众问题、原始素材、负责人、交付日和衡量标准。优先安排可用现有材料完成的内容。"
+    },
+    {
+      "id": "campaign-plan",
+      "category": "marketing",
+      "title": "从活动目标做营销执行计划",
+      "description": "有渠道动作、有验证标准，也有证据缺口。",
+      "tags": [
+        "营销方案",
+        "活动",
+        "推广",
+        "campaign plan"
+      ],
+      "evidence": "example",
+      "sources": [
+        "signals-work",
+        "marketing",
+        "amplitude"
+      ],
+      "variables": [
+        "产品和目标",
+        "渠道、时间和预算"
+      ],
+      "template": "为【产品和目标】制定受限于【渠道、时间和预算】的活动计划。按前期验证、发布和复盘列动作、材料、责任和衡量。把已知受众证据与待验证假设写清，说明何时需要缩减或调整。"
+    },
+    {
+      "id": "landing-page-outline",
+      "category": "marketing",
+      "title": "为一个落地页规划信息与行动",
+      "description": "把承诺、证据和下一步连成读者路径。",
+      "tags": [
+        "落地页",
+        "转化",
+        "landing page"
+      ],
+      "evidence": "example",
+      "sources": [
+        "marketing",
+        "frank"
+      ],
+      "variables": [
+        "目标动作",
+        "产品和受众"
+      ],
+      "template": "围绕【目标动作】给【产品和受众】规划落地页。按首屏、痛点、结果、如何使用、信任证据、疑问和行动排列，给每块要回答的问题及素材。没有证据的承诺先留待确认。"
+    },
+    {
+      "id": "seo-content-brief",
+      "category": "marketing",
+      "title": "按搜索需求写内容简报",
+      "description": "选择真实问题和可核对内容结构。",
+      "tags": [
+        "SEO",
+        "搜索意图",
+        "SEO brief"
+      ],
+      "evidence": "example",
+      "sources": [
+        "marketing",
+        "google"
+      ],
+      "variables": [
+        "主题和读者",
+        "可用查询或搜索结果"
+      ],
+      "template": "为【主题和读者】制作搜索内容简报，基于【可用查询或搜索结果】归纳用户想回答的问题。给主问题、相关问题、结构、可提供的原创材料和引用。若没有来源，不估计搜索量或竞争度。"
+    },
+    {
+      "id": "ad-variants",
+      "category": "marketing",
+      "title": "设计能比较效果的广告版本",
+      "description": "交代不同说服角度和需要独立检验的变量。",
+      "tags": [
+        "广告",
+        "投放",
+        "A/B",
+        "ad variants"
+      ],
+      "evidence": "example",
+      "sources": [
+        "marketing",
+        "google"
+      ],
+      "variables": [
+        "产品和受众",
+        "渠道和字数"
+      ],
+      "template": "为【产品和受众】写【渠道和字数】可用的广告版本。每版只改变一个主要说服点，写标题、正文、行动提示和支撑事实。提出对应测试指标，列任何需审核的声明。"
+    },
+    {
+      "id": "sales-call-prep",
+      "category": "marketing",
+      "title": "为一次销售沟通整理对客背景",
+      "description": "带着待验证的需求假设和提问进入会议。",
+      "tags": [
+        "销售",
+        "商务",
+        "客户拜访",
+        "sales call"
+      ],
+      "evidence": "example",
+      "sources": [
+        "marketing",
+        "amplitude",
+        "ms"
+      ],
+      "variables": [
+        "客户角色与组织",
+        "事实和以往接触"
+      ],
+      "template": "为与【客户角色与组织】的沟通做准备，已知【事实和以往接触】。列可能目标、已核实信息、需要了解的三件事和可举的案例，提供开场及退出条件。"
+    },
+    {
+      "id": "sales-objection",
+      "category": "marketing",
+      "title": "练习回应客户提出的购买顾虑",
+      "description": "先澄清具体顾虑，再给可核实答复。",
+      "tags": [
+        "异议处理",
+        "销售",
+        "objection handling"
+      ],
+      "evidence": "example",
+      "sources": [
+        "marketing",
+        "amplitude",
+        "ms"
+      ],
+      "variables": [
+        "客户异议和可用事实"
+      ],
+      "template": "根据【客户异议和可用事实】准备回复。先提出一个澄清问题，再按预算、适用范围或风险等给可能回答和证据。不能承诺的地方提出替代验证或后续跟进，写一个可口述版本。"
+    },
+    {
+      "id": "sales-proposal",
+      "category": "marketing",
+      "title": "整理一份可审阅的客户方案",
+      "description": "明确范围、交付和待确认条款。",
+      "tags": [
+        "销售提案",
+        "商务方案",
+        "proposal"
+      ],
+      "evidence": "example",
+      "sources": [
+        "marketing",
+        "amplitude",
+        "ms"
+      ],
+      "variables": [
+        "客户需求和已确认条件",
+        "客户角色"
+      ],
+      "template": "将【客户需求和已确认条件】写成给【客户角色】的方案草稿。包含目标、交付范围、时间、验证方式、计划外事项及待确认条款。每项能力回指实际证据，价格或日期缺失时明确待确认。"
+    },
+    {
+      "id": "marketing-report",
+      "category": "marketing",
+      "title": "对照活动目标写效果报告",
+      "description": "汇报结果、归因限制和下一轮行动。",
+      "tags": [
+        "营销复盘",
+        "投放报告",
+        "marketing report"
+      ],
+      "evidence": "example",
+      "sources": [
+        "marketing",
+        "amplitude",
+        "google"
+      ],
+      "variables": [
+        "活动目标和数据",
+        "受众"
+      ],
+      "template": "以【活动目标和数据】写【受众】可读的效果报告。按渠道给覆盖、转化、成本与口径。区分数据能说明的变化和无法验证的归因，给下一轮应继续、停掉和补测的各一项。"
+    },
+    {
+      "id": "classify-ticket",
+      "category": "support",
+      "title": "给客服工单分类和分派",
+      "description": "根据内容、风险与服务范围安排去向。",
+      "tags": [
+        "工单分类",
+        "服务台",
+        "ticket routing"
+      ],
+      "evidence": "example",
+      "sources": [
+        "rasa",
+        "amplitude",
+        "ms-service"
+      ],
+      "variables": [
+        "工单和分类字典"
+      ],
+      "template": "根据【工单和分类字典】逐条标任务、主要问题、影响对象、优先级依据与建议队列。允许多标签，证据不足时给待补信息。保留原工单编号，并标出需要人工先看的请求。"
+    },
+    {
+      "id": "support-first-reply",
+      "category": "support",
+      "title": "给新工单写第一条有效回复",
+      "description": "确认理解并请求最少的诊断信息。",
+      "tags": [
+        "首次响应",
+        "客服回复",
+        "first response"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ms-service",
+        "rasa",
+        "google"
+      ],
+      "variables": [
+        "工单和已知情况"
+      ],
+      "template": "根据【工单和已知情况】写一条首响。先复述用户希望恢复的结果，列已能确认的事实，问一到两个最能缩小范围的问题。给当前能兑现的下一次更新时间。"
+    },
+    {
+      "id": "support-troubleshoot",
+      "category": "support",
+      "title": "为客服写一条逐步排障指引",
+      "description": "从低风险、容易回退的步骤开始。",
+      "tags": [
+        "客服排障",
+        "故障指引",
+        "troubleshooting"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ms-service",
+        "rasa",
+        "copilot"
+      ],
+      "variables": [
+        "故障表现、环境和客户熟练度"
+      ],
+      "template": "针对【故障表现、环境和客户熟练度】写一份排障指引。每一步写操作、预期信号和失败后的分支，从可逆检查看起。标出必须由支持人员做的动作，保留用户原资料。"
+    },
+    {
+      "id": "support-escalation",
+      "category": "support",
+      "title": "把问题转交给能解决的团队",
+      "description": "交代已排查情况与需要响应的动作。",
+      "tags": [
+        "客服升级",
+        "转单",
+        "支持交接",
+        "support escalation"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ms-service",
+        "amplitude",
+        "rasa"
+      ],
+      "variables": [
+        "问题和排查记录",
+        "升级团队"
+      ],
+      "template": "把【问题和排查记录】整理为给【升级团队】的交接。写影响、开始时间、账号或版本范围、复现、已试与结果、最需要的决定和下一次客户更新。将任何不必要的身份信息移除。"
+    },
+    {
+      "id": "support-status",
+      "category": "support",
+      "title": "起草一条服务中断状态更新",
+      "description": "给已知影响、处理进度和下次更新时间。",
+      "tags": [
+        "服务状态",
+        "事故通知",
+        "incident update"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ms-service",
+        "anthskills",
+        "amplitude"
+      ],
+      "variables": [
+        "已核实的中断情况",
+        "用户群"
+      ],
+      "template": "根据【已核实的中断情况】向【用户群】起草状态更新。先写影响范围、何时开始和用户可以做什么，再给目前进度及下次更新时间。对根因或恢复时间缺少证据时保持待确认。"
+    },
+    {
+      "id": "support-close",
+      "category": "support",
+      "title": "写一份工单结案说明",
+      "description": "让用户核对恢复结果并知道如何重新打开。",
+      "tags": [
+        "结案",
+        "客户确认",
+        "case closure"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ms-service",
+        "rasa"
+      ],
+      "variables": [
+        "工单经过、修复和验证结果"
+      ],
+      "template": "将【工单经过、修复和验证结果】写成给用户的结案说明。说明解决了什么、用户如何自查、可能还剩哪些影响以及如何重新联系。附用户可安全保留的参考编号。"
+    },
+    {
+      "id": "support-kb",
+      "category": "support",
+      "title": "把已解决的工单写成知识库文章",
+      "description": "将个案归纳为可复现步骤和适用范围。",
+      "tags": [
+        "客服知识库",
+        "帮助文档",
+        "knowledge base"
+      ],
+      "evidence": "example",
+      "sources": [
+        "amplitude",
+        "ms-service",
+        "anthskills"
+      ],
+      "variables": [
+        "已验证工单和修复",
+        "目标读者"
+      ],
+      "template": "根据【已验证工单和修复】为【目标读者】写知识库文章。包括症状、适用条件、检查、解决步骤和何时转人工。去掉单个客户信息，保留可验证异常和对应版本。"
+    },
+    {
+      "id": "support-response-qa",
+      "category": "support",
+      "title": "抽查客服回复是否准确可执行",
+      "description": "对照政策、证据、语气及后续行动。",
+      "tags": [
+        "服务质检",
+        "客服QA",
+        "reply review"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ms-service",
+        "openai-evals",
+        "amplitude"
+      ],
+      "variables": [
+        "服务规则和质检维度",
+        "工单与答复"
+      ],
+      "template": "按【服务规则和质检维度】评审【工单与答复】。给是否准确、是否解决关键问题、用户需要做什么及承诺是否能兑现。为最高优先级问题提供替换句和一条审核记录。"
+    },
+    {
+      "id": "service-queue-report",
+      "category": "support",
+      "title": "从队列数据看积压和重复问题",
+      "description": "按时效与影响分清处理重点。",
+      "tags": [
+        "工单报表",
+        "服务运营",
+        "SLA",
+        "queue report"
+      ],
+      "evidence": "example",
+      "sources": [
+        "amplitude",
+        "ms-service"
+      ],
+      "variables": [
+        "队列数据和时间窗口"
+      ],
+      "template": "根据【队列数据和时间窗口】写服务报告。定义等待、首次响应和结案的口径，给数量、时长、分布与重复主题。列最需要先处理的队列，以及哪些异常可能源于记录不完整。"
+    },
+    {
+      "id": "support-macro",
+      "category": "support",
+      "title": "为反复出现的请求写标准回复",
+      "description": "既保留统一承诺，也给必要的个性化字段。",
+      "tags": [
+        "客服话术",
+        "标准回复",
+        "macro"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ms-service",
+        "rasa"
+      ],
+      "variables": [
+        "常见请求和服务政策"
+      ],
+      "template": "为【常见请求和服务政策】编写标准回复。标出可替换的背景字段、允许承诺和必须升级的条件。给正常适用例及一个不该使用同一回复的反例。"
+    }
+  ],
+  "workflows": [
+    {
+      "id": "source-to-brief",
+      "title": "从研究问题到带出处的简报",
+      "description": "适合要向别人交付结论，也需要留下核对线索时。",
+      "sources": [
+        "storm",
+        "gptr",
+        "gemini"
+      ],
+      "steps": [
+        "research-question",
+        "search-plan",
+        "evidence-map",
+        "source-disagreement",
+        "research-brief-for-others"
+      ]
+    },
+    {
+      "id": "notes-to-decision",
+      "title": "从会议到决策与跟进",
+      "description": "先准备议程，再把决定、责任和下一步交给团队。",
+      "sources": [
+        "ms",
+        "amplitude",
+        "anthskills"
+      ],
+      "steps": [
+        "meeting-agenda",
+        "meeting-notes",
+        "decision-log",
+        "async-update",
+        "follow-up"
+      ]
+    },
+    {
+      "id": "draft-to-publish",
+      "title": "从写作要求到对外发布",
+      "description": "适合有材料、有受众，需要稳妥编辑和复用的文字。",
+      "sources": [
+        "google",
+        "marketing",
+        "writing-app"
+      ],
+      "steps": [
+        "write-brief",
+        "outline-article",
+        "line-edit-markup",
+        "headlines",
+        "repurpose-content"
+      ]
+    },
+    {
+      "id": "learn-a-topic",
+      "title": "学会一个新主题",
+      "description": "用讲解、练习和错题反馈检验是否能独立运用。",
+      "sources": [
+        "academy",
+        "fabric",
+        "pew"
+      ],
+      "steps": [
+        "study-plan",
+        "explain",
+        "worked-example",
+        "retrieval-practice",
+        "review-mistakes"
+      ]
+    },
+    {
+      "id": "language-practice",
+      "title": "做一轮外语训练",
+      "description": "从水平判断走到语境练习和口语复盘。",
+      "sources": [
+        "dialekt",
+        "language-prompts"
+      ],
+      "steps": [
+        "language-level-check",
+        "vocabulary-in-context",
+        "language-roleplay",
+        "speaking-feedback"
+      ]
+    },
+    {
+      "id": "plan-travel",
+      "title": "规划并检查一次出行",
+      "description": "行程、物品和变动备选都可在出发前核对。",
+      "sources": [
+        "ai-home",
+        "google"
+      ],
+      "steps": [
+        "trip-itinerary",
+        "local-recommendations",
+        "packing-list",
+        "trip-disruption"
+      ]
+    },
+    {
+      "id": "compare-purchase",
+      "title": "为一次购买做选择",
+      "description": "先限定候选，再核对评价、费用和最后一个关键信息。",
+      "sources": [
+        "oxford",
+        "openai",
+        "ai-home"
+      ],
+      "steps": [
+        "shopping-shortlist",
+        "compare-reviews",
+        "compare-options"
+      ]
+    },
+    {
+      "id": "document-to-data",
+      "title": "从文件包到可复算数据",
+      "description": "适用于扫描件、PDF 表格和需要逐步核查的数据。",
+      "sources": [
+        "anthskills",
+        "markit",
+        "oai-cookbook"
+      ],
+      "steps": [
+        "organize-file-pack",
+        "scan-ocr-verify",
+        "table-from-pdf",
+        "clean-table",
+        "workbook-audit"
+      ]
+    },
+    {
+      "id": "analyze-and-report",
+      "title": "从业务问题到数据报告",
+      "description": "定义口径、探索数据，再把结论交给决策人。",
+      "sources": [
+        "amplitude",
+        "gemini",
+        "msresearch"
+      ],
+      "steps": [
+        "metric-definition",
+        "explore-data",
+        "choose-chart",
+        "dashboard-review",
+        "exec-brief"
+      ]
+    },
+    {
+      "id": "fix-and-release",
+      "title": "从报错定位到发布验证",
+      "description": "沿实际用户入口复现和确认修复。",
+      "sources": [
+        "superpowers",
+        "copilot",
+        "oaiskills"
+      ],
+      "steps": [
+        "repro-brief",
+        "debug-error",
+        "write-tests",
+        "pr-description",
+        "release-check"
+      ]
+    },
+    {
+      "id": "idea-to-video",
+      "title": "从故事构想到可拍可剪的视频",
+      "description": "先让叙事成立，再安排镜头、旁白、声音及字幕。",
+      "sources": [
+        "gemini",
+        "veo",
+        "anthskills"
+      ],
+      "steps": [
+        "creative-draft",
+        "video-storyboard",
+        "shot-list",
+        "script-voiceover",
+        "video-edit-plan",
+        "video-captions"
+      ]
+    },
+    {
+      "id": "job-application",
+      "title": "为一个岗位准备申请与面试",
+      "description": "让简历、行为面试和复盘都围绕岗位证据。",
+      "sources": [
+        "career-academy",
+        "resume",
+        "frank"
+      ],
+      "steps": [
+        "job-description",
+        "resume-tailor",
+        "star-stories",
+        "interview-practice",
+        "interview-debrief"
+      ]
+    },
+    {
+      "id": "product-discovery",
+      "title": "从用户访谈走到产品验证",
+      "description": "适合还需确认问题、范围或实验结果的团队。",
+      "sources": [
+        "amplitude",
+        "bmad",
+        "copilot"
+      ],
+      "steps": [
+        "discovery-interview",
+        "opportunity-map",
+        "product-requirements",
+        "experiment-plan",
+        "experiment-readout"
+      ]
+    },
+    {
+      "id": "difficult-talk",
+      "title": "在困难对话前后准备与跟进",
+      "description": "先厘清边界，练习回应，再用书面消息确认下一步。",
+      "sources": [
+        "ms",
+        "google",
+        "amplitude"
+      ],
+      "steps": [
+        "difficult-conversation",
+        "negotiation-prep",
+        "resolve-disagreement",
+        "follow-up"
+      ]
+    },
+    {
+      "id": "launch-campaign",
+      "title": "从产品定位到活动复盘",
+      "description": "用可验证主张贯穿渠道、落地页和结果解读。",
+      "sources": [
+        "marketing",
+        "amplitude",
+        "signals-work"
+      ],
+      "steps": [
+        "value-proposition",
+        "campaign-plan",
+        "landing-page-outline",
+        "ad-variants",
+        "marketing-report"
+      ]
+    },
+    {
+      "id": "handle-support-case",
+      "title": "处理一个服务工单",
+      "description": "从分流、首响、排查到结案，有需要时转交。",
+      "sources": [
+        "rasa",
+        "amplitude",
+        "ms-service"
+      ],
+      "steps": [
+        "classify-ticket",
+        "support-first-reply",
+        "support-troubleshoot",
+        "support-escalation",
+        "support-close",
+        "support-kb"
+      ]
+    },
+    {
+      "id": "evaluate-a-prompt",
+      "title": "让一个 Prompt 的改进可检验",
+      "description": "先收集失败样例，改后用同一批输入比较。",
+      "sources": [
+        "openai-evals",
+        "oai-cookbook",
+        "prompt-tutorial"
+      ],
+      "steps": [
+        "repair-prompt",
+        "design-regression-set",
+        "prompt-rubric",
+        "compare-prompts",
+        "evaluate-grounding"
+      ]
+    },
+    {
+      "id": "operate-ai-workflow",
+      "title": "把一次完成的 AI 任务做成可复用流程",
+      "description": "写清任务步骤、工具、交接材料和人工检查点。",
+      "sources": [
+        "msagents",
+        "superpowers",
+        "bmad"
+      ],
+      "steps": [
+        "decompose-ai-task",
+        "tool-selection",
+        "context-pack",
+        "batch-prompt-spec",
+        "human-checkpoints"
+      ]
+    },
+    {
+      "id": "reflect-and-adjust",
+      "title": "把日常观察变成可尝试的调整",
+      "description": "根据真实记录反思，选择一个低负担的行动。",
+      "sources": [
+        "four",
+        "openai",
+        "frank"
+      ],
+      "steps": [
+        "journal-reflection",
+        "sort-out-concern",
+        "routine-design"
+      ]
     }
   ]
 }

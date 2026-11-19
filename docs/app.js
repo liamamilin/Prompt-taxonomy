@@ -13,10 +13,12 @@ const preview = byId("preview");
 
 let catalog;
 let categories;
+let promptsById;
 let index;
 let activeCategory = "";
 let activePrompt = null;
 let opener = null;
+let returnHash = "#library";
 const pageSize = 24;
 let visibleCount = pageSize;
 
@@ -61,12 +63,18 @@ function resetResults() {
 }
 
 function render() {
-  const words = normalize(search.value).trim().split(/\s+/).filter(Boolean);
+  const query = normalize(search.value).trim();
+  const words = query.split(/\s+/).filter(Boolean);
   const filtered = index.filter(({ prompt, keywords }) =>
     (!activeCategory || prompt.category === activeCategory)
     && (!selector.value || prompt.evidence === selector.value)
     && words.every((word) => keywords.includes(word))
   );
+  if (query) {
+    const relevance = ({ title, tags }) =>
+      (title === query ? 6 : 0) + (tags.includes(query) ? 4 : 0) + (title.includes(query) ? 2 : 0);
+    filtered.sort((a, b) => relevance(b) - relevance(a));
+  }
   const hasMore = filtered.length > visibleCount;
   const countText = `找到 ${filtered.length} 条模板`;
   byId("results-count").textContent = hasMore ? `${countText}，显示前 ${visibleCount} 条` : countText;
@@ -88,12 +96,36 @@ function render() {
     bottom.append(element("span", "查看模板"), arrow);
     button.append(top, element("span", prompt.title, "card-title"),
       element("span", prompt.description, "card-description"), bottom);
-    button.addEventListener("click", () => {
-      opener = button;
-      history.replaceState(null, "", `#prompt=${prompt.id}`);
-      showPrompt(prompt);
-    });
+    button.addEventListener("click", () => openPrompt(prompt, button, "#library"));
     return button;
+  }));
+}
+
+function openPrompt(prompt, trigger, sectionHash) {
+  opener = trigger;
+  returnHash = sectionHash;
+  history.replaceState(null, "", `#prompt=${prompt.id}`);
+  showPrompt(prompt);
+}
+
+function renderWorkflows() {
+  byId("workflow-list").replaceChildren(...catalog.workflows.map((workflow) => {
+    const panel = element("details", "", "workflow");
+    const head = element("summary", workflow.title);
+    head.append(element("span", `${workflow.steps.length} 步`, "workflow-count"));
+    const steps = element("ol", "", "workflow-steps");
+    for (const id of workflow.steps) {
+      const prompt = promptsById.get(id);
+      const item = element("li");
+      const button = element("button", prompt.title, "text-button");
+      button.type = "button";
+      button.setAttribute("aria-haspopup", "dialog");
+      button.addEventListener("click", () => openPrompt(prompt, button, "#workflows"));
+      item.append(button);
+      steps.append(item);
+    }
+    panel.append(head, element("p", workflow.description), steps);
+    return panel;
   }));
 }
 
@@ -136,7 +168,7 @@ function showPrompt(prompt) {
 function syncHash() {
   if (!catalog) return;
   const id = location.hash.startsWith("#prompt=") ? location.hash.slice(8) : "";
-  const prompt = catalog.prompts.find((entry) => entry.id === id);
+  const prompt = promptsById.get(id);
   if (prompt && prompt !== activePrompt) showPrompt(prompt);
   if (!prompt && dialog.open) dialog.close();
 }
@@ -172,16 +204,21 @@ async function copyText(text, success, fallback) {
 function initialize(data) {
   catalog = data;
   categories = new Map(data.categories.map((category) => [category.id, category]));
+  promptsById = new Map(data.prompts.map((prompt) => [prompt.id, prompt]));
   const categoryPositions = new Map();
   index = data.prompts.map((prompt) => {
     const position = categoryPositions.get(prompt.category) ?? 0;
     categoryPositions.set(prompt.category, position + 1);
-    return { prompt, position, keywords: normalize([prompt.title, prompt.description, prompt.template, ...prompt.tags,
-      categories.get(prompt.category).name].join(" ")) };
+    return {
+      prompt, position, title: normalize(prompt.title), tags: prompt.tags.map(normalize),
+      keywords: normalize([prompt.title, prompt.description, prompt.template, ...prompt.tags,
+        categories.get(prompt.category).name].join(" ")),
+    };
   }).sort((a, b) => a.position - b.position);
   byId("version").textContent = data.version;
   byId("prompt-count").textContent = data.prompts.length;
   byId("category-count").textContent = categories.size;
+  byId("workflow-count").textContent = data.workflows.length;
   byId("source-count").textContent = Object.keys(data.sources).length;
   for (const [id, item] of Object.entries(data.evidence)) {
     const option = element("option", item.label);
@@ -207,6 +244,7 @@ function initialize(data) {
   }
 
   sourceList(Object.keys(data.sources), byId("sources"));
+  renderWorkflows();
   search.addEventListener("input", resetResults);
   selector.addEventListener("change", resetResults);
   categorySelect.addEventListener("change", () => selectCategory(categorySelect.value));
@@ -226,8 +264,9 @@ function initialize(data) {
   byId("copy").addEventListener("click", () => copyText(preview.textContent, "已复制 Prompt", "已选中，请手动复制。"));
   byId("copy-link").addEventListener("click", () => copyText(location.href, "已复制链接", "请从地址栏复制链接。"));
   dialog.addEventListener("close", () => {
-    if (location.hash === `#prompt=${activePrompt?.id}`) history.replaceState(null, "", "#library");
+    if (location.hash === `#prompt=${activePrompt?.id}`) history.replaceState(null, "", returnHash);
     activePrompt = null;
+    returnHash = "#library";
     if (opener?.isConnected) opener.focus({ preventScroll: true });
     opener = null;
   });
@@ -243,7 +282,7 @@ function initialize(data) {
   syncHash();
 }
 
-fetch("./catalog.json?v=1.1")
+fetch("./catalog.json?v=2.0")
   .then((response) => {
     if (!response.ok) throw new Error(`Catalog: ${response.status}`);
     return response.json();

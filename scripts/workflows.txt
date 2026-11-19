@@ -1,0 +1,20 @@
+# id|title|description|source IDs|prompt IDs
+source-to-brief|从研究问题到带出处的简报|适合要向别人交付结论，也需要留下核对线索时。|storm,gptr,gemini|research-question,search-plan,evidence-map,source-disagreement,research-brief-for-others
+notes-to-decision|从会议到决策与跟进|先准备议程，再把决定、责任和下一步交给团队。|ms,amplitude,anthskills|meeting-agenda,meeting-notes,decision-log,async-update,follow-up
+draft-to-publish|从写作要求到对外发布|适合有材料、有受众，需要稳妥编辑和复用的文字。|google,marketing,writing-app|write-brief,outline-article,line-edit-markup,headlines,repurpose-content
+learn-a-topic|学会一个新主题|用讲解、练习和错题反馈检验是否能独立运用。|academy,fabric,pew|study-plan,explain,worked-example,retrieval-practice,review-mistakes
+language-practice|做一轮外语训练|从水平判断走到语境练习和口语复盘。|dialekt,language-prompts|language-level-check,vocabulary-in-context,language-roleplay,speaking-feedback
+plan-travel|规划并检查一次出行|行程、物品和变动备选都可在出发前核对。|ai-home,google|trip-itinerary,local-recommendations,packing-list,trip-disruption
+compare-purchase|为一次购买做选择|先限定候选，再核对评价、费用和最后一个关键信息。|oxford,openai,ai-home|shopping-shortlist,compare-reviews,compare-options
+document-to-data|从文件包到可复算数据|适用于扫描件、PDF 表格和需要逐步核查的数据。|anthskills,markit,oai-cookbook|organize-file-pack,scan-ocr-verify,table-from-pdf,clean-table,workbook-audit
+analyze-and-report|从业务问题到数据报告|定义口径、探索数据，再把结论交给决策人。|amplitude,gemini,msresearch|metric-definition,explore-data,choose-chart,dashboard-review,exec-brief
+fix-and-release|从报错定位到发布验证|沿实际用户入口复现和确认修复。|superpowers,copilot,oaiskills|repro-brief,debug-error,write-tests,pr-description,release-check
+idea-to-video|从故事构想到可拍可剪的视频|先让叙事成立，再安排镜头、旁白、声音及字幕。|gemini,veo,anthskills|creative-draft,video-storyboard,shot-list,script-voiceover,video-edit-plan,video-captions
+job-application|为一个岗位准备申请与面试|让简历、行为面试和复盘都围绕岗位证据。|career-academy,resume,frank|job-description,resume-tailor,star-stories,interview-practice,interview-debrief
+product-discovery|从用户访谈走到产品验证|适合还需确认问题、范围或实验结果的团队。|amplitude,bmad,copilot|discovery-interview,opportunity-map,product-requirements,experiment-plan,experiment-readout
+difficult-talk|在困难对话前后准备与跟进|先厘清边界，练习回应，再用书面消息确认下一步。|ms,google,amplitude|difficult-conversation,negotiation-prep,resolve-disagreement,follow-up
+launch-campaign|从产品定位到活动复盘|用可验证主张贯穿渠道、落地页和结果解读。|marketing,amplitude,signals-work|value-proposition,campaign-plan,landing-page-outline,ad-variants,marketing-report
+handle-support-case|处理一个服务工单|从分流、首响、排查到结案，有需要时转交。|rasa,amplitude,ms-service|classify-ticket,support-first-reply,support-troubleshoot,support-escalation,support-close,support-kb
+evaluate-a-prompt|让一个 Prompt 的改进可检验|先收集失败样例，改后用同一批输入比较。|openai-evals,oai-cookbook,prompt-tutorial|repair-prompt,design-regression-set,prompt-rubric,compare-prompts,evaluate-grounding
+operate-ai-workflow|把一次完成的 AI 任务做成可复用流程|写清任务步骤、工具、交接材料和人工检查点。|msagents,superpowers,bmad|decompose-ai-task,tool-selection,context-pack,batch-prompt-spec,human-checkpoints
+reflect-and-adjust|把日常观察变成可尝试的调整|根据真实记录反思，选择一个低负担的行动。|four,openai,frank|journal-reflection,sort-out-concern,routine-design
