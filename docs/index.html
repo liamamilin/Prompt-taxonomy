@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="以 GitHub 开源案例和国际使用研究为基础，整理 48 条可填写、复制和分享的中文 Prompt。">
+  <meta name="theme-color" content="#f8f8f0">
+  <title>Prompt Taxonomy · 提示词图谱</title>
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#library">跳至模板</a>
+  <header class="topbar">
+    <div class="wrap header-inner">
+      <a class="brand" href="./" aria-label="Prompt Taxonomy 首页"><span class="brand-mark" aria-hidden="true">↗</span> Prompt Taxonomy</a>
+      <nav aria-label="站内导航">
+        <a href="#library">模板库</a>
+        <a href="#research">调研</a>
+        <a href="https://github.com/liamamilin/Prompt-taxonomy">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">公开提示词目录 <span> / </span> V1.0</p>
+        <h1 id="hero-title">提示词图谱<span>.</span></h1>
+        <p class="lede">从你想完成的任务出发。找到一条合适的 Prompt，填入你的材料，即可复制使用。</p>
+        <div class="hero-facts" aria-label="目录规模">
+          <span><b id="prompt-count">48</b> 条模板</span>
+          <span><b id="category-count">8</b> 类任务</span>
+          <a href="#research"><b id="source-count">28</b> 个来源 ↘</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><span class="art-corner">+</span><span class="art-bracket">[</span><span class="art-word">input<br><em>↳ output</em></span><span class="art-bracket">]</span><span class="art-corner">+</span></div>
+    </section>
+    <section class="library" id="library" aria-labelledby="library-title">
+      <div class="library-top">
+        <h2 id="library-title">模板库</h2>
+        <div class="filters">
+          <div class="search-wrap">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m16 16 4 4"/></svg>
+            <label class="sr-only" for="search">搜索模板</label>
+            <input id="search" type="search" placeholder="搜索邮件、调研、SQL…" autocomplete="off">
+            <kbd aria-hidden="true">/</kbd>
+          </div>
+          <label class="sr-only" for="evidence">证据类型</label>
+          <select id="evidence"><option value="">所有证据</option></select>
+        </div>
+      </div>
+      <div class="library-layout">
+        <aside class="sidebar"><div class="sidebar-inner"><h3>任务分类</h3><nav id="categories" aria-label="按任务分类"></nav></div></aside>
+        <div class="results">
+          <div class="results-line"><p id="results-count" role="status">正在载入模板…</p><button class="text-button" id="clear" hidden>清除筛选</button></div>
+          <div class="cards" id="cards"></div>
+        </div>
+      </div>
+      <noscript><p>请启用 JavaScript 以搜索和填写模板，或 <a href="./catalog.json">查看 JSON 目录</a>。</p></noscript>
+    </section>
+    <section class="research" id="research" aria-labelledby="research-title">
+      <div class="research-top">
+        <div><p class="eyebrow">资料与方法</p><h2 id="research-title">模板从哪里来</h2></div>
+        <a class="button light" href="https://github.com/liamamilin/Prompt-taxonomy/blob/main/RESEARCH.md">完整调研与对照表 ↗</a>
+      </div>
+      <p class="research-intro">以 GitHub 上的通用库和专题项目为样本，再用国际调查和平台使用研究核对。来源支持的是同类任务或可借鉴的做法，具体模板由本项目编写。</p>
+      <div class="evidence-key" id="evidence-key"></div>
+      <details class="source-details"><summary>浏览全部来源</summary><ul id="sources"></ul></details>
+    </section>
+  </main>
+  <footer class="wrap footer"><span>Prompt Taxonomy · 2026.11</span><a href="./catalog.json" download>下载 JSON ↓</a></footer>
+  <dialog id="detail" aria-labelledby="detail-title">
+    <div class="dialog-content">
+      <div class="dialog-top"><span id="detail-meta" class="eyebrow"></span><button type="button" class="close" id="close" aria-label="关闭" autofocus>×</button></div>
+      <h2 id="detail-title"></h2><p id="detail-description"></p>
+      <details class="fields" open><summary>填写变量 <span>可选</span></summary><div id="variables"></div></details>
+      <div class="preview-label"><h3>Prompt</h3><button id="copy-link" class="text-button" type="button">复制链接</button></div>
+      <pre id="preview" tabindex="0"></pre>
+      <div class="dialog-actions"><span id="feedback" role="status"></span><button type="button" class="button primary" id="copy">复制 Prompt ↗</button></div>
+      <details class="detail-sources"><summary>为什么收录</summary><p id="detail-evidence"></p><ul id="detail-sources"></ul></details>
+    </div>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,1385 @@
+{
+  "version": "1.0",
+  "researchedOn": "2026-11-19",
+  "categories": [
+    {
+      "id": "research",
+      "name": "查找与研究",
+      "description": "从提出问题到交付可追溯的答案。"
+    },
+    {
+      "id": "writing",
+      "name": "写作与语言",
+      "description": "起草、编辑、翻译和复用文字。"
+    },
+    {
+      "id": "learning",
+      "name": "学习与辅导",
+      "description": "解释概念、练习技能和检验理解。"
+    },
+    {
+      "id": "planning",
+      "name": "计划与生活",
+      "description": "把日常问题变成可以执行的安排。"
+    },
+    {
+      "id": "office",
+      "name": "办公与协作",
+      "description": "从会议、文档和消息里产出可流转的工作材料。"
+    },
+    {
+      "id": "data",
+      "name": "数据与表格",
+      "description": "把原始材料转成可信的结构、结论和图形。"
+    },
+    {
+      "id": "coding",
+      "name": "开发与调试",
+      "description": "从理解代码到定位问题、写变更和验证。"
+    },
+    {
+      "id": "creative",
+      "name": "创作与多媒体",
+      "description": "把创意转成文案、视觉描述和可用的素材方案。"
+    }
+  ],
+  "evidence": {
+    "usage": {
+      "label": "使用研究",
+      "description": "公开日志或调查记录了同类任务。"
+    },
+    "example": {
+      "label": "公开案例",
+      "description": "可在公开仓库或官方指南查到相似用法。"
+    },
+    "editorial": {
+      "label": "编辑补充",
+      "description": "为补足工作流整理的原创模板。"
+    }
+  },
+  "sources": {
+    "openai": {
+      "name": "OpenAI · How People Use ChatGPT",
+      "kind": "日志研究",
+      "url": "https://www.nber.org/papers/w34255",
+      "note": "ChatGPT 消费端的任务类别与使用分布，论文表 3 列出细分类。"
+    },
+    "signals": {
+      "name": "OpenAI Signals · Individual data",
+      "kind": "日志研究",
+      "url": "https://openai.com/signals/data/",
+      "note": "更新至 2026 年第三季度的主题与使用目的数据。"
+    },
+    "oxford": {
+      "name": "Oxford Reuters Institute · Generative AI and News 2026",
+      "kind": "跨国调查",
+      "url": "https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure",
+      "note": "覆盖九国的在线问卷，包含六国连续观察和具体信息类任务。"
+    },
+    "four": {
+      "name": "GVR Kiran 等 · Conversation-Level Evidence",
+      "kind": "日志研究",
+      "url": "https://arxiv.org/abs/2609.38279",
+      "note": "印度、尼日利亚、巴西与巴基斯坦的用户授权导出，预印本。"
+    },
+    "anthropic": {
+      "name": "Anthropic Economic Index · Cadences",
+      "kind": "日志研究",
+      "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
+      "note": "按 Claude 产品入口和时间看任务分布，包含 Claude Code 的开发任务聚类。"
+    },
+    "pew": {
+      "name": "Pew Research Center · How Teens Use and View AI",
+      "kind": "人群调查",
+      "url": "https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/",
+      "note": "美国青少年对信息查找、学校作业及其他任务的自报使用。"
+    },
+    "wildchat": {
+      "name": "AI2 · WildChat",
+      "kind": "公开语料研究",
+      "url": "https://arxiv.org/abs/2405.01470",
+      "note": "参与者主动同意收集的多语种 ChatGPT 会话语料，样本存在自选择。"
+    },
+    "arena": {
+      "name": "LMSYS · Chat-1M",
+      "kind": "公开语料研究",
+      "url": "https://arxiv.org/abs/2309.11998",
+      "note": "多模型实地交互数据，包含模型体验和评估场景。"
+    },
+    "prompts-chat": {
+      "name": "f/prompts.chat",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/f/prompts.chat/blob/main/PROMPTS.md",
+      "note": "通用角色 Prompt；通用库的覆盖和措辞示例。"
+    },
+    "fabric": {
+      "name": "danielmiessler/Fabric",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/danielmiessler/Fabric/tree/main/data/patterns",
+      "note": "任务型工作流，包括摘要、主张分析、图表、邮件和代码。"
+    },
+    "dair": {
+      "name": "DAIR.AI · Prompt Engineering Guide",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/pages/introduction/examples.en.mdx",
+      "note": "摘要、提取、问答、分类、对话、代码和推理示例。"
+    },
+    "copilot": {
+      "name": "GitHub · Awesome Copilot",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/github/awesome-copilot/tree/main/skills",
+      "note": "开发工作流、代码理解、功能拆分、实现计划和文档技能。"
+    },
+    "oai-cookbook": {
+      "name": "OpenAI Cookbook",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/openai/openai-cookbook/tree/main/examples",
+      "note": "可运行的实体提取、数据转换、演示和图像案例。"
+    },
+    "claude": {
+      "name": "Anthropic · Claude Cookbooks",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/anthropics/claude-cookbooks/tree/main/capabilities",
+      "note": "摘要、分类、检索和 Text-to-SQL 等案例。图像样例位于 multimodal。"
+    },
+    "storm": {
+      "name": "Stanford OVAL · STORM",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/stanford-oval/storm",
+      "note": "多视角子问题、查询拆分、证据组织和带引用撰写。"
+    },
+    "gptr": {
+      "name": "GPT Researcher",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/assafelovic/gpt-researcher/blob/master/gpt_researcher/prompts.py",
+      "note": "包含检索规划、相关内容筛选、证据摘要和研究报告。"
+    },
+    "gemini": {
+      "name": "Google Gemini Cookbook",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/google-gemini/cookbook/tree/main/examples",
+      "note": "带来源研究、引用匹配、视频理解、实体提取、图像和文档理解案例。"
+    },
+    "nano": {
+      "name": "Awesome Nano Banana 2.1 Prompts",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/hanshs474/awesome-nano-banana-2-1-prompts",
+      "note": "创作者分享的出图与参考照片重塑案例，可对照样图和原帖。"
+    },
+    "frank": {
+      "name": "FrankX · Prompt Library",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/frankxai/prompt-library/tree/main/prompts",
+      "note": "商务邮件、学习笔记、餐食计划、营销与编程案例。包含上游导入。"
+    },
+    "ms-course": {
+      "name": "Microsoft · Generative AI for Beginners",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/microsoft/generative-ai-for-beginners/tree/main/06-text-generation-apps",
+      "note": "教学案例，覆盖初稿、摘要和对话式文本生成。"
+    },
+    "ms-base": {
+      "name": "Microsoft · Promptbase",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/microsoft/promptbase/tree/main/guidance_programs",
+      "note": "用于比较提示技术和结构化输出的基准示例。"
+    },
+    "writing-app": {
+      "name": "Generative AI with LangChain · Writing Assistant",
+      "kind": "GitHub 仓库",
+      "url": "https://github.com/benman1/generative_ai_with_langchain/blob/second_edition/writing_assistant/app.py",
+      "note": "写作反馈应用实际使用的指令和交互。"
+    },
+    "ms": {
+      "name": "Microsoft · Copilot Prompt Gallery",
+      "kind": "官方案例",
+      "url": "https://enablement.microsoft.com/en-us/copilot/prompt-gallery/",
+      "note": "会议准备与复盘、沟通、演示和协作案例。"
+    },
+    "google": {
+      "name": "Google Workspace · Gemini Prompt Guide",
+      "kind": "官方案例",
+      "url": "https://workspace.google.com/learning/content/gemini-prompt-guide",
+      "note": "按工作角色提供沟通、内容和资料处理案例。"
+    },
+    "academy": {
+      "name": "OpenAI Academy · Prompt Pack for Students",
+      "kind": "官方案例",
+      "url": "https://academy.openai.com/en/public/clubs/higher-education-05x4z/resources/prompt-pack-for-students",
+      "note": "学习计划、主动练习、复习和理解类模板。"
+    },
+    "gitdocs": {
+      "name": "GitHub Docs · Copilot Cookbook",
+      "kind": "官方案例",
+      "url": "https://docs.github.com/en/copilot/tutorials/copilot-cookbook",
+      "note": "调试、文档、重构及测试的官方使用示例。"
+    },
+    "midjourney": {
+      "name": "Midjourney Docs · Prompt Basics",
+      "kind": "官方案例",
+      "url": "https://docs.midjourney.com/hc/en-us/articles/32023408776205-Prompt-Basics/",
+      "note": "用于描述主体、媒介、环境、光线、色彩和构图的建议。"
+    },
+    "veo": {
+      "name": "Google Cloud · Video generation prompt guide",
+      "kind": "官方案例",
+      "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide",
+      "note": "面向视频生成指令的动作、风格、运镜和声音案例。"
+    }
+  },
+  "prompts": [
+    {
+      "id": "quick-answer",
+      "category": "research",
+      "title": "回答具体问题",
+      "description": "先拿到直接答案，再看例外和证据。",
+      "tags": [
+        "问答",
+        "查询",
+        "answer",
+        "FAQ"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "oxford",
+        "prompts-chat",
+        "dair"
+      ],
+      "variables": [
+        "问题",
+        "地区、时间或适用对象"
+      ],
+      "template": "我想知道【问题】。背景是【地区、时间或适用对象】。先用两句话回答，再解释最多三个关键点和一个容易误解的例外。涉及近期事实时标注信息截至日期，并附可访问的原始来源；查不到的部分明确标为待核实。"
+    },
+    {
+      "id": "source-research",
+      "category": "research",
+      "title": "调研一个主题",
+      "description": "用多个原始来源回答开放问题。",
+      "tags": [
+        "搜索",
+        "深度研究",
+        "research",
+        "deep research"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "oxford",
+        "storm",
+        "gptr",
+        "gemini"
+      ],
+      "variables": [
+        "问题",
+        "时间、地区、对象"
+      ],
+      "template": "调研【问题】，范围限定为【时间、地区、对象】。先拆成 3–5 个可检索的子问题，再找独立的原始或官方来源。交付一页简报，包含结论、证据对应链接、来源之间的分歧和仍未回答的问题。无法联网时给出检索方案并说明限制。"
+    },
+    {
+      "id": "compare-options",
+      "category": "research",
+      "title": "对比选项并给建议",
+      "description": "让推荐与实际约束、证据和取舍对应。",
+      "tags": [
+        "选型",
+        "购买",
+        "比较",
+        "compare",
+        "decision"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "fabric",
+        "oxford"
+      ],
+      "variables": [
+        "候选方案",
+        "场景",
+        "标准和优先级"
+      ],
+      "template": "我需要在【候选方案】中选择，使用情境是【场景】，最在乎【标准和优先级】。做一张同口径比较表，注明价格或版本的核对日期与来源。给出首选、适合选次选的条件和一个我今天能做的验证动作；资料缺失处留空并标明。"
+    },
+    {
+      "id": "fact-check",
+      "category": "research",
+      "title": "逐条核对说法",
+      "description": "把一句笼统判断拆成可核验主张。",
+      "tags": [
+        "事实核查",
+        "验证",
+        "引用",
+        "fact check"
+      ],
+      "evidence": "example",
+      "sources": [
+        "fabric",
+        "gemini"
+      ],
+      "variables": [
+        "原文或说法",
+        "受众"
+      ],
+      "template": "核对【原文或说法】，目标受众是【受众】。提取可验证的主张，对每条用「支持 / 有条件支持 / 证据不足 / 与证据矛盾」标记，并附最直接的证据链接、发布日期和一句判断理由。保留来源之间有意义的差异。"
+    },
+    {
+      "id": "paper-brief",
+      "category": "research",
+      "title": "读懂一篇论文",
+      "description": "提取方法、结果、局限和可用性。",
+      "tags": [
+        "论文",
+        "文献",
+        "paper",
+        "academic"
+      ],
+      "evidence": "example",
+      "sources": [
+        "fabric",
+        "claude"
+      ],
+      "variables": [
+        "论文正文或链接",
+        "我的问题"
+      ],
+      "template": "阅读【论文正文或链接】，回答它对【我的问题】有什么帮助。按研究问题、样本与方法、主要结果、局限、我的下一步组织；引用页码或章节，区分作者结论与推断。对效应量写明比较的双方和适用条件。"
+    },
+    {
+      "id": "search-plan",
+      "category": "research",
+      "title": "制定检索方案",
+      "description": "把难搜的问题转成能执行的搜索。",
+      "tags": [
+        "关键词",
+        "资料",
+        "文献检索",
+        "search"
+      ],
+      "evidence": "example",
+      "sources": [
+        "storm",
+        "gptr"
+      ],
+      "variables": [
+        "主题",
+        "输出或决策"
+      ],
+      "template": "我在找【主题】的资料，用途是【输出或决策】。给 5 条可直接复制的搜索式，覆盖不同术语；列出优先查的数据库或网站、筛选条件和应排除的结果。指出一种容易遗漏的来源类型及它能补哪项证据。"
+    },
+    {
+      "id": "draft-email",
+      "category": "writing",
+      "title": "起草一封邮件",
+      "description": "让收件人迅速看懂背景和要做的事。",
+      "tags": [
+        "邮件",
+        "沟通",
+        "email",
+        "reply"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "google",
+        "ms",
+        "frank"
+      ],
+      "variables": [
+        "背景和事实",
+        "收件人及关系",
+        "希望对方做什么",
+        "期望语气"
+      ],
+      "template": "根据【背景和事实】写一封给【收件人及关系】的邮件，目的是【希望对方做什么】。给主题和一封可发送的正文，首段直接提出请求，结尾写清下一步和期限。未提供的日期或承诺用占位符，语气采用【期望语气】。"
+    },
+    {
+      "id": "rewrite",
+      "category": "writing",
+      "title": "润色并保留原意",
+      "description": "改善清晰度、结构和语气。",
+      "tags": [
+        "润色",
+        "改写",
+        "编辑",
+        "rewrite",
+        "editing"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "fabric",
+        "google",
+        "writing-app"
+      ],
+      "variables": [
+        "原文",
+        "受众",
+        "语气"
+      ],
+      "template": "请把【原文】改得更清楚，读者是【受众】，语气是【语气】。保持事实、专有名词、承诺和原有立场，删去重复并把最重要的信息提前。先给可直接使用的版本，再列出最多三处改变原句结构的原因。"
+    },
+    {
+      "id": "translate",
+      "category": "writing",
+      "title": "按场景翻译",
+      "description": "兼顾含义、术语和目标语读者。",
+      "tags": [
+        "翻译",
+        "本地化",
+        "translate",
+        "localization"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "four",
+        "fabric"
+      ],
+      "variables": [
+        "原文",
+        "目标语言和地区",
+        "使用场景"
+      ],
+      "template": "把【原文】翻译成【目标语言和地区】，用于【使用场景】。保留链接、数字和段落层级；专有名词优先采用场景通用译法。遇到两种合理解释时选一个并附简短译注。交付译文和需要确认的术语。"
+    },
+    {
+      "id": "summarize",
+      "category": "writing",
+      "title": "总结长文或对话",
+      "description": "用较短篇幅保留事实和关键细节。",
+      "tags": [
+        "总结",
+        "摘要",
+        "提炼",
+        "summarize"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "oxford",
+        "fabric",
+        "claude",
+        "ms-course"
+      ],
+      "variables": [
+        "材料",
+        "受众",
+        "阅读目的"
+      ],
+      "template": "把【材料】总结给【受众】，用于【阅读目的】。先给一句主旨，再给最多五个要点。保留关键数字和前提，每条标注可回查的小节或发言位置。若材料提出相互矛盾的说法，另列出来。"
+    },
+    {
+      "id": "critique-draft",
+      "category": "writing",
+      "title": "评审一篇初稿",
+      "description": "把编辑反馈变成可实施的修改清单。",
+      "tags": [
+        "审稿",
+        "批注",
+        "文案",
+        "critique",
+        "review"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "fabric",
+        "frank"
+      ],
+      "variables": [
+        "初稿",
+        "传播目标",
+        "读者"
+      ],
+      "template": "评审【初稿】能否实现【传播目标】，读者是【读者】。优先找三处影响理解或可信度的问题，逐条给原句、问题、读者会怎样理解及改法。最后指出值得保留的一处，并重写影响最大的一小段。"
+    },
+    {
+      "id": "repurpose-content",
+      "category": "writing",
+      "title": "把一份内容改成多种格式",
+      "description": "同一份素材适配不同渠道。",
+      "tags": [
+        "复用",
+        "社媒",
+        "帖子",
+        "repurpose",
+        "social"
+      ],
+      "evidence": "example",
+      "sources": [
+        "frank",
+        "google",
+        "ms"
+      ],
+      "variables": [
+        "原素材",
+        "目标渠道和长度",
+        "读者"
+      ],
+      "template": "把【原素材】改成【目标渠道和长度】版本，面向【读者】。为每个渠道调整开头、内容顺序和行动提示，保留核心事实和品牌语气。输出各成品和一份事实核对清单。"
+    },
+    {
+      "id": "explain",
+      "category": "learning",
+      "title": "用例子解释一个概念",
+      "description": "先建立直觉，再补上准确说法。",
+      "tags": [
+        "通俗",
+        "讲解",
+        "概念",
+        "ELI5",
+        "explain"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "pew",
+        "frank"
+      ],
+      "variables": [
+        "当前水平",
+        "概念"
+      ],
+      "template": "请给【当前水平】的人解释【概念】。先用一句话说明它解决什么问题，再给一个具体例子，接着介绍准确定义和类比的边界。最后出一道可自查的小题，把答案放到末尾。"
+    },
+    {
+      "id": "step-tutor",
+      "category": "learning",
+      "title": "逐步引导解题",
+      "description": "通过提示发现卡点和错误。",
+      "tags": [
+        "解题",
+        "作业",
+        "提示",
+        "tutoring"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "pew",
+        "four",
+        "academy"
+      ],
+      "variables": [
+        "题目",
+        "思路或步骤"
+      ],
+      "template": "我正在做【题目】，已经尝试【思路或步骤】。先判断我卡在哪一步，每次只给一个能推进的提示，等待我尝试后再给下一步。最后用一个相似题检查我能否独立复用方法。"
+    },
+    {
+      "id": "practice-quiz",
+      "category": "learning",
+      "title": "按难度出练习题",
+      "description": "通过答案和解析发现知识缺口。",
+      "tags": [
+        "题库",
+        "复习",
+        "测验",
+        "quiz",
+        "flashcards"
+      ],
+      "evidence": "example",
+      "sources": [
+        "fabric",
+        "academy",
+        "frank"
+      ],
+      "variables": [
+        "教材、笔记或考点",
+        "当前水平"
+      ],
+      "template": "根据【教材、笔记或考点】出针对【当前水平】的练习。按识记、理解、迁移各给两题；先展示全部题目，再单列答案、解析和典型错误。每题注明它在测试哪个知识点。"
+    },
+    {
+      "id": "study-plan",
+      "category": "learning",
+      "title": "安排一个学习计划",
+      "description": "让目标、可用时间和练习成果对应。",
+      "tags": [
+        "路线图",
+        "学习计划",
+        "study plan"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "pew",
+        "academy",
+        "prompts-chat"
+      ],
+      "variables": [
+        "可观察的学习成果",
+        "水平",
+        "每周时间和截止日期"
+      ],
+      "template": "我的目标是【可观察的学习成果】，当前水平是【水平】，可投入【每周时间和截止日期】。给首周具体安排和后续里程碑。每阶段包含一个动手任务、验收方式和补救策略，优先选无需付费的资源。"
+    },
+    {
+      "id": "language-roleplay",
+      "category": "learning",
+      "title": "角色扮演练对话",
+      "description": "在真实语境中练理解和表达。",
+      "tags": [
+        "口语",
+        "外语",
+        "角色扮演",
+        "language",
+        "roleplay"
+      ],
+      "evidence": "example",
+      "sources": [
+        "academy",
+        "google"
+      ],
+      "variables": [
+        "目标语言",
+        "具体场景",
+        "语言水平"
+      ],
+      "template": "请用【目标语言】和我模拟【具体场景】。我的水平是【语言水平】。从一句自然开场开始，每轮等我回答再继续。每三轮用简短反馈归纳一个关键语言问题，给一个更自然的说法让我重试。"
+    },
+    {
+      "id": "interview-practice",
+      "category": "learning",
+      "title": "模拟一次面试",
+      "description": "用真实追问练习更具体的回答。",
+      "tags": [
+        "面试",
+        "求职",
+        "工作",
+        "interview"
+      ],
+      "evidence": "example",
+      "sources": [
+        "fabric",
+        "frank",
+        "ms"
+      ],
+      "variables": [
+        "岗位",
+        "岗位说明",
+        "相关经历"
+      ],
+      "template": "为【岗位】做模拟面试，招聘要求是【岗位说明】，我的背景是【相关经历】。每次问一题，依据回答追问细节。结束后从具体性、可信度和岗位匹配度给反馈，并指出一个我下次要重练的回答。"
+    },
+    {
+      "id": "how-to",
+      "category": "planning",
+      "title": "拆解一个操作步骤",
+      "description": "把目标、准备事项和检查点串起来。",
+      "tags": [
+        "怎么做",
+        "教程",
+        "步骤",
+        "how-to"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "oxford",
+        "dair"
+      ],
+      "variables": [
+        "目标",
+        "现状"
+      ],
+      "template": "我想完成【目标】，我的起点和资源是【现状】。按执行顺序给步骤，每一步写清要做的事、可观察的完成信号和一个常见失误。最后给一个我现在就能完成的最小步骤。"
+    },
+    {
+      "id": "project-plan",
+      "category": "planning",
+      "title": "把项目拆成行动计划",
+      "description": "先厘清交付物、依赖和里程碑。",
+      "tags": [
+        "计划",
+        "项目",
+        "里程碑",
+        "project plan"
+      ],
+      "evidence": "example",
+      "sources": [
+        "copilot",
+        "ms",
+        "google"
+      ],
+      "variables": [
+        "项目目标",
+        "人员、时间和依赖"
+      ],
+      "template": "把【项目目标】拆成可执行计划。资源和约束是【人员、时间和依赖】。交付分阶段里程碑、依赖顺序、待确认的风险和本周行动表。每项行动用动词开头，并写明交付物；未知负责人标为待分配。"
+    },
+    {
+      "id": "meal-plan",
+      "category": "planning",
+      "title": "用现有食材规划餐食",
+      "description": "按人数和时间减少浪费。",
+      "tags": [
+        "食谱",
+        "菜单",
+        "做饭",
+        "recipes",
+        "meal plan"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "frank"
+      ],
+      "variables": [
+        "食材和大致用量",
+        "人数和餐次",
+        "忌口、设备和用时"
+      ],
+      "template": "我有【食材和大致用量】，要做【人数和餐次】的餐，限制是【忌口、设备和用时】。给一份菜单、用量、步骤与总耗时。优先消耗保质期短的食材，再列真正需要补买的东西。"
+    },
+    {
+      "id": "trip-itinerary",
+      "category": "planning",
+      "title": "做一份可调整的行程",
+      "description": "考虑同区安排、转场和备选。",
+      "tags": [
+        "旅行",
+        "旅游",
+        "路线",
+        "travel",
+        "itinerary"
+      ],
+      "evidence": "example",
+      "sources": [
+        "google",
+        "openai"
+      ],
+      "variables": [
+        "目的地和日期",
+        "出发地、预算、兴趣、同行人"
+      ],
+      "template": "为【目的地和日期】安排行程，偏好和约束为【出发地、预算、兴趣、同行人】。按地理位置安排每天的活动，留转场时间，给一个天气备选。需要预约、价格或开放时间的地方附官方核对入口。"
+    },
+    {
+      "id": "brainstorm",
+      "category": "planning",
+      "title": "用约束做有效头脑风暴",
+      "description": "获得差异明显的点子和验证办法。",
+      "tags": [
+        "创意",
+        "点子",
+        "ideation",
+        "brainstorm"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "oxford",
+        "fabric",
+        "frank",
+        "google"
+      ],
+      "variables": [
+        "需要解决的问题",
+        "目标人群",
+        "时间、成本或素材"
+      ],
+      "template": "围绕【需要解决的问题】想点子，服务【目标人群】，约束为【时间、成本或素材】。给六个机制各异的方案，每个写清它改变了什么、适合谁和最大弱点。选两个最容易验证的，给出一小时内能做的验证。"
+    },
+    {
+      "id": "decision-precheck",
+      "category": "planning",
+      "title": "提前检验一个计划",
+      "description": "在投入前找出最可验证的薄弱环节。",
+      "tags": [
+        "风险",
+        "复盘",
+        "假设",
+        "premortem"
+      ],
+      "evidence": "editorial",
+      "sources": [
+        "fabric",
+        "frank"
+      ],
+      "variables": [
+        "当前计划",
+        "成功标准",
+        "现实约束"
+      ],
+      "template": "评估【当前计划】，目标是【成功标准】，重要限制是【现实约束】。假设计划三个月后失败，从现有信息找出五个可能原因，并按影响和验证成本排序。为前三个原因各给一个早期信号和一个可以马上做的小验证。"
+    },
+    {
+      "id": "meeting-notes",
+      "category": "office",
+      "title": "整理会议纪要",
+      "description": "从转录中提取决策、行动项和未决问题。",
+      "tags": [
+        "会议",
+        "纪要",
+        "待办",
+        "meeting recap"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ms",
+        "google",
+        "fabric"
+      ],
+      "variables": [
+        "会议记录",
+        "目标读者"
+      ],
+      "template": "根据【会议记录】给【目标读者】写纪要。按结论、已定决策、行动项和仍待讨论的问题组织。行动项用「事项 / 负责人 / 截止 / 对应发言」表格，缺失信息标为待确认，并区分探讨中的提议与已定事项。"
+    },
+    {
+      "id": "status-update",
+      "category": "office",
+      "title": "写一份项目周报",
+      "description": "让读者知道进展、风险和需要的决定。",
+      "tags": [
+        "周报",
+        "汇报",
+        "进度",
+        "status update"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ms",
+        "google",
+        "fabric"
+      ],
+      "variables": [
+        "本周记录",
+        "读者"
+      ],
+      "template": "把【本周记录】整理成给【读者】的项目周报。先写整体状态及最需要关注的一点，再列本周交付、可量化的进展、风险和下周动作。需要对方决策的事项单列，标清截止日期及其影响。"
+    },
+    {
+      "id": "slides-outline",
+      "category": "office",
+      "title": "做演示文稿大纲",
+      "description": "让每页都承担一个清楚的信息任务。",
+      "tags": [
+        "PPT",
+        "幻灯片",
+        "演示",
+        "slides",
+        "presentation"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ms",
+        "google",
+        "oai-cookbook",
+        "fabric"
+      ],
+      "variables": [
+        "材料",
+        "受众",
+        "时长"
+      ],
+      "template": "把【材料】整理成一场面向【受众】、时长【时长】的演示。先给一句核心主张，再逐页写标题、唯一要传达的观点、支撑证据或图示、口播提示。末页给行动建议或需要确认的决定。"
+    },
+    {
+      "id": "synthesize-feedback",
+      "category": "office",
+      "title": "归纳用户反馈",
+      "description": "提取模式，并保留能解释问题的原话。",
+      "tags": [
+        "用户研究",
+        "访谈",
+        "反馈",
+        "feedback"
+      ],
+      "evidence": "example",
+      "sources": [
+        "fabric",
+        "google",
+        "ms"
+      ],
+      "variables": [
+        "反馈原文或访谈记录",
+        "要改进的问题"
+      ],
+      "template": "分析【反馈原文或访谈记录】，目标是【要改进的问题】。归纳主题，统计每类在已给样本中的提及数并说明同一条能否多标签，给代表性引文和影响。对优先级最高的主题提出可验证的下一步。"
+    },
+    {
+      "id": "compare-docs",
+      "category": "office",
+      "title": "比对两份文档",
+      "description": "看清增删变动及其实际影响。",
+      "tags": [
+        "文档比对",
+        "版本",
+        "差异",
+        "document diff"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ms",
+        "fabric"
+      ],
+      "variables": [
+        "版本 A",
+        "版本 B",
+        "重点条款、范围或字段"
+      ],
+      "template": "对比【版本 A】与【版本 B】，关注【重点条款、范围或字段】。用表格列出位置、旧内容、新内容、变化类型和影响，合并语义相同的格式变化。对需要负责人确认的变化单列问题。"
+    },
+    {
+      "id": "handoff",
+      "category": "office",
+      "title": "做可接手的交接文档",
+      "description": "把当前状态、入口和未决事项交清楚。",
+      "tags": [
+        "交接",
+        "协作",
+        "移交",
+        "handoff"
+      ],
+      "evidence": "editorial",
+      "sources": [
+        "ms",
+        "copilot"
+      ],
+      "variables": [
+        "项目资料",
+        "接手人"
+      ],
+      "template": "将【项目资料】整理成给【接手人】的交接文档。说明目标、当前状态、关键入口、已作出的决定、未完成事项和未来一周优先动作。写出对方应先打开或运行什么，以及如何判断接手成功。"
+    },
+    {
+      "id": "extract-fields",
+      "category": "data",
+      "title": "从材料中提取字段",
+      "description": "把文档或记录整理成结构化数据。",
+      "tags": [
+        "提取",
+        "结构化",
+        "JSON",
+        "extraction"
+      ],
+      "evidence": "example",
+      "sources": [
+        "dair",
+        "oai-cookbook",
+        "gemini",
+        "ms-base"
+      ],
+      "variables": [
+        "原始材料",
+        "目标字段、格式和每行粒度"
+      ],
+      "template": "从【原始材料】提取【目标字段、格式和每行粒度】。交付符合约定的 JSON 或 CSV，缺失字段填 null，从上下文推断的字段单独标注。提供两条原文到结果的对应样例，方便抽查。"
+    },
+    {
+      "id": "explore-data",
+      "category": "data",
+      "title": "探索一份数据",
+      "description": "先检查质量和口径，再找解释得通的现象。",
+      "tags": [
+        "分析",
+        "EDA",
+        "统计",
+        "CSV",
+        "data analysis"
+      ],
+      "evidence": "example",
+      "sources": [
+        "gemini",
+        "oai-cookbook",
+        "google",
+        "ms"
+      ],
+      "variables": [
+        "数据文件和字段说明",
+        "业务问题"
+      ],
+      "template": "检查【数据文件和字段说明】，回答【业务问题】。先列数据范围、缺失、重复和可能影响结论的口径，再用具体数值给主要发现。对每个关键结论给可复算的分子、分母或查询逻辑，并标出原因仍待验证的问题。"
+    },
+    {
+      "id": "spreadsheet-formula",
+      "category": "data",
+      "title": "写一条表格公式",
+      "description": "按真实列名、边界和工具版本写公式。",
+      "tags": [
+        "Excel",
+        "Sheets",
+        "公式",
+        "VLOOKUP",
+        "spreadsheet"
+      ],
+      "evidence": "example",
+      "sources": [
+        "ms",
+        "google"
+      ],
+      "variables": [
+        "Excel 或 Google Sheets",
+        "列名和样例",
+        "预期结果"
+      ],
+      "template": "我用【Excel 或 Google Sheets】处理【列名和样例】。请写公式实现【预期结果】并说明放在哪个单元格。指出空值、重复项、未匹配项如何处理，再给两个手工可验算的小例子。"
+    },
+    {
+      "id": "sql-query",
+      "category": "data",
+      "title": "从需求写 SQL",
+      "description": "明确粒度、去重、连接和日期条件。",
+      "tags": [
+        "SQL",
+        "查询",
+        "数据库",
+        "text-to-sql"
+      ],
+      "evidence": "example",
+      "sources": [
+        "claude",
+        "gemini"
+      ],
+      "variables": [
+        "SQL 方言",
+        "业务问题",
+        "字段、主键及关系"
+      ],
+      "template": "用 【SQL 方言】 查询【业务问题】，表结构是【字段、主键及关系】。先确认结果粒度和时间窗，再给可运行的查询。解释连接和去重逻辑，补一个核对总量的查询；字段不足处先列待确认项。"
+    },
+    {
+      "id": "choose-chart",
+      "category": "data",
+      "title": "选择并设计一张图",
+      "description": "用合适的图形回答一个具体问题。",
+      "tags": [
+        "可视化",
+        "图表",
+        "趋势",
+        "chart",
+        "visualization"
+      ],
+      "evidence": "example",
+      "sources": [
+        "fabric",
+        "gemini",
+        "google"
+      ],
+      "variables": [
+        "数据或字段",
+        "读者",
+        "要比较的问题"
+      ],
+      "template": "用【数据或字段】向【读者】回答【要比较的问题】。推荐一张主图，给横纵轴、分组、单位、标题和注释。说明缺失值和异常值如何呈现；提供一条读者能用图验证的结论。"
+    },
+    {
+      "id": "clean-table",
+      "category": "data",
+      "title": "制定表格清洗规则",
+      "description": "让清洗过程可检查、可复跑。",
+      "tags": [
+        "去重",
+        "清洗",
+        "脏数据",
+        "cleaning"
+      ],
+      "evidence": "example",
+      "sources": [
+        "oai-cookbook",
+        "google"
+      ],
+      "variables": [
+        "列结构与代表样本",
+        "后续用途"
+      ],
+      "template": "检查【列结构与代表样本】，为【后续用途】制定清洗规则。逐项写明缺失值、重复记录、日期与单位的处理，区分可自动修复和需要人工确认的情况。用小表展示输入、期望输出和校验信号。"
+    },
+    {
+      "id": "debug-error",
+      "category": "coding",
+      "title": "定位报错并做最小修复",
+      "description": "用复现和验证缩小问题范围。",
+      "tags": [
+        "报错",
+        "排查",
+        "debug",
+        "bug"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "anthropic",
+        "copilot",
+        "gitdocs"
+      ],
+      "variables": [
+        "报错或异常行为",
+        "预期结果",
+        "版本、命令或最短示例"
+      ],
+      "template": "帮我定位【报错或异常行为】，期望是【预期结果】，环境和复现是【版本、命令或最短示例】。按证据排列可能原因，为首选原因给一个验证动作。确认后给最小修复和回归检查，并说明剩余不确定性。"
+    },
+    {
+      "id": "explain-code",
+      "category": "coding",
+      "title": "解释一段代码或数据流",
+      "description": "快速建立能用于修改和调试的理解。",
+      "tags": [
+        "读代码",
+        "理解源码",
+        "explain code",
+        "codebase"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "anthropic",
+        "copilot",
+        "gitdocs"
+      ],
+      "variables": [
+        "代码或模块",
+        "目标或问题"
+      ],
+      "template": "解释【代码或模块】在【目标或问题】中的作用。从输入到输出走一遍正常路径，指出关键状态、外部依赖和常见失败路径；有仓库上下文时引用具体文件或函数。最后给一个适合验证理解的小例子。"
+    },
+    {
+      "id": "implement-feature",
+      "category": "coding",
+      "title": "实现一个具体功能",
+      "description": "让需求与验收条件对应到正常入口。",
+      "tags": [
+        "开发",
+        "功能",
+        "实现",
+        "feature",
+        "implement"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "anthropic",
+        "copilot",
+        "gitdocs"
+      ],
+      "variables": [
+        "代码或仓库",
+        "用户行为",
+        "正常场景和边界场景"
+      ],
+      "template": "在【代码或仓库】里实现【用户行为】，验收条件是【正常场景和边界场景】。先找到现有入口和可复用逻辑，再实现。运行最相关的验证，最后说明变更文件、已验证行为和仍待确认的情况。"
+    },
+    {
+      "id": "review-code",
+      "category": "coding",
+      "title": "审查变更中的具体问题",
+      "description": "按影响排列有证据且能修改的问题。",
+      "tags": [
+        "代码评审",
+        "PR",
+        "code review"
+      ],
+      "evidence": "example",
+      "sources": [
+        "fabric",
+        "copilot",
+        "frank",
+        "gitdocs"
+      ],
+      "variables": [
+        "变更或 diff",
+        "预期和调用约束"
+      ],
+      "template": "评审【变更或 diff】，预期行为是【预期和调用约束】。优先找行为错误、数据一致性、兼容性和测试缺口。每个问题附文件位置、可触发的场景、后果及最小修正；没有足够证据的点单列为疑问。"
+    },
+    {
+      "id": "write-tests",
+      "category": "coding",
+      "title": "为关键行为设计测试",
+      "description": "覆盖可能真的坏掉的边界。",
+      "tags": [
+        "测试",
+        "单测",
+        "回归",
+        "unit test",
+        "test cases"
+      ],
+      "evidence": "example",
+      "sources": [
+        "copilot",
+        "gitdocs"
+      ],
+      "variables": [
+        "函数、接口或修复",
+        "契约或已知回归",
+        "现有测试框架"
+      ],
+      "template": "为【函数、接口或修复】补测试，行为约束是【契约或已知回归】。使用【现有测试框架】。选择能区分正确实现和常见错误实现的最少案例，包含一个关键边界；写清输入、预期结果和运行命令。"
+    },
+    {
+      "id": "refactor-code",
+      "category": "coding",
+      "title": "重构并保持已有行为",
+      "description": "有针对性地降低维护成本。",
+      "tags": [
+        "重构",
+        "技术债",
+        "refactor"
+      ],
+      "evidence": "example",
+      "sources": [
+        "copilot",
+        "frank",
+        "gitdocs"
+      ],
+      "variables": [
+        "代码范围",
+        "具体维护问题",
+        "公共接口或边界"
+      ],
+      "template": "重构【代码范围】，目标是【具体维护问题】，已知调用约束是【公共接口或边界】。先用现有测试或示例固定行为，再做最小改动。给出重构前后的调用示例与验证方式，并指出需要单独处理的行为变化。"
+    },
+    {
+      "id": "image-brief",
+      "category": "creative",
+      "title": "生成一张指定风格的图",
+      "description": "把主体、构图、光线和比例说明白。",
+      "tags": [
+        "图像",
+        "图片",
+        "出图",
+        "image prompt",
+        "Midjourney"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "oxford",
+        "nano",
+        "midjourney",
+        "oai-cookbook",
+        "gemini"
+      ],
+      "variables": [
+        "使用场景",
+        "主题和主体",
+        "媒介、风格或参考"
+      ],
+      "template": "为【使用场景】生成一张【主题和主体】的图。视觉方向是【媒介、风格或参考】。明确画幅、主体位置、景别、光线、配色和背景要求。先给可直接用于图像模型的一段描述，再给两个只有一个关键差异的版本。"
+    },
+    {
+      "id": "image-edit",
+      "category": "creative",
+      "title": "根据局部要求修图",
+      "description": "明确修改区域与其余视觉约束。",
+      "tags": [
+        "改图",
+        "修图",
+        "参考图",
+        "image edit",
+        "inpaint"
+      ],
+      "evidence": "example",
+      "sources": [
+        "nano",
+        "oai-cookbook",
+        "gemini"
+      ],
+      "variables": [
+        "参考图片",
+        "目标区域和修改内容",
+        "需要维持的元素"
+      ],
+      "template": "编辑【参考图片】的【目标区域和修改内容】。保留【需要维持的元素】及原图的机位、画幅、光线方向和主体比例。说明修改应如何与边缘、阴影和材质相接；交付编辑后的图片，或给能交给编辑模型的指令。"
+    },
+    {
+      "id": "visual-read",
+      "category": "creative",
+      "title": "读图并用证据说明",
+      "description": "把直接看见的东西和推测分别写清楚。",
+      "tags": [
+        "读图",
+        "截图",
+        "OCR",
+        "vision",
+        "image analysis"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "gemini",
+        "claude"
+      ],
+      "variables": [
+        "图片或截图",
+        "问题"
+      ],
+      "template": "观察【图片或截图】，重点回答【问题】。先描述可见证据并定位区域，再给解释。看不清的文字标成「无法辨认」，有多种解释时列出支持和反对证据。最后给一个可用于核对结论的动作。"
+    },
+    {
+      "id": "video-storyboard",
+      "category": "creative",
+      "title": "把故事分成短视频镜头",
+      "description": "为每个镜头安排动作、运镜与声音。",
+      "tags": [
+        "短视频",
+        "分镜",
+        "运镜",
+        "storyboard",
+        "video"
+      ],
+      "evidence": "example",
+      "sources": [
+        "gemini",
+        "veo"
+      ],
+      "variables": [
+        "故事梗概",
+        "时长、比例和发布场景"
+      ],
+      "template": "把【故事梗概】改成【时长、比例和发布场景】的短视频分镜。逐镜给秒数、主体动作、场景、景别、镜头运动和声音；让角色和道具在镜头之间保持一致。标注最适合先试做的镜头及原因。"
+    },
+    {
+      "id": "creative-draft",
+      "category": "creative",
+      "title": "起草一个短故事",
+      "description": "把叙事冲突、细节和转折落到文字中。",
+      "tags": [
+        "故事",
+        "小说",
+        "创作",
+        "fiction",
+        "story"
+      ],
+      "evidence": "usage",
+      "sources": [
+        "openai",
+        "prompts-chat",
+        "ms-course"
+      ],
+      "variables": [
+        "字数",
+        "角色与困境",
+        "读者感受"
+      ],
+      "template": "写一个约【字数】的短故事。主角和冲突是【角色与困境】，希望产生【读者感受】。开头用可观察的动作进入场景，中段让角色做一个有代价的选择，结尾用一个细节回应开头。另给一个不同方向的结尾提纲。"
+    },
+    {
+      "id": "campaign-copy",
+      "category": "creative",
+      "title": "给同一目标写不同方向的文案",
+      "description": "比较卖点与表达角度，而非同义改写。",
+      "tags": [
+        "营销",
+        "广告",
+        "标题",
+        "copywriting"
+      ],
+      "evidence": "example",
+      "sources": [
+        "google",
+        "ms",
+        "frank"
+      ],
+      "variables": [
+        "产品或活动",
+        "受众和渠道",
+        "希望读者采取的行动",
+        "事实与卖点"
+      ],
+      "template": "给【产品或活动】写三组面向【受众和渠道】的文案，目标是【希望读者采取的行动】，可使用的证据是【事实与卖点】。每组采用不同说服角度，给标题、正文、行动提示和适用情境。所有量化承诺需来自素材。"
+    }
+  ]
+}
