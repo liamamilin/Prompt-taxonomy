@@ -1,0 +1,49 @@
+openai|OpenAI · How People Use ChatGPT|日志研究|https://www.nber.org/papers/w34255|ChatGPT 消费端的任务类别与使用分布，论文表 3 列出细分类。
+signals|OpenAI Signals · Individual data|日志研究|https://openai.com/signals/data/|更新至 2026 年第三季度的主题与使用目的数据。
+oxford|Oxford Reuters Institute · Generative AI and News 2026|跨国调查|https://reutersinstitute.politics.ox.ac.uk/generative-ai-and-news-report-2026-standalone-tools-information-infrastructure|覆盖九国的在线问卷，包含六国连续观察和具体信息类任务。
+four|GVR Kiran 等 · Conversation-Level Evidence|日志研究|https://arxiv.org/abs/2609.38279|印度、尼日利亚、巴西与巴基斯坦的用户授权导出，预印本。
+anthropic|Anthropic Economic Index · Cadences|日志研究|https://www.anthropic.com/research/economic-index-june-2026-report|按 Claude 产品入口和时间看任务分布，包含 Claude Code 的开发任务聚类。
+pew|Pew Research Center · How Teens Use and View AI|人群调查|https://www.pewresearch.org/internet/2026/02/24/how-teens-use-and-view-ai/|美国青少年对信息查找、学校作业及其他任务的自报使用。
+wildchat|AI2 · WildChat|公开语料研究|https://arxiv.org/abs/2405.01470|参与者主动同意收集的多语种 ChatGPT 会话语料，样本存在自选择。
+arena|LMSYS · Chat-1M|公开语料研究|https://arxiv.org/abs/2309.11998|多模型实地交互数据，包含模型体验和评估场景。
+prompts-chat|f/prompts.chat|GitHub 仓库|https://github.com/f/prompts.chat/blob/main/PROMPTS.md|通用角色 Prompt；通用库的覆盖和措辞示例。
+fabric|danielmiessler/Fabric|GitHub 仓库|https://github.com/danielmiessler/Fabric/tree/main/data/patterns|任务型工作流，包括摘要、主张分析、图表、邮件和代码。
+dair|DAIR.AI · Prompt Engineering Guide|GitHub 仓库|https://github.com/dair-ai/Prompt-Engineering-Guide/blob/main/pages/introduction/examples.en.mdx|摘要、提取、问答、分类、对话、代码和推理示例。
+copilot|GitHub · Awesome Copilot|GitHub 仓库|https://github.com/github/awesome-copilot/tree/main/skills|开发工作流、代码理解、功能拆分、实现计划和文档技能。
+oai-cookbook|OpenAI Cookbook|GitHub 仓库|https://github.com/openai/openai-cookbook/tree/main/examples|可运行的实体提取、数据转换、演示和图像案例。
+claude|Anthropic · Claude Cookbooks|GitHub 仓库|https://github.com/anthropics/claude-cookbooks/tree/main/capabilities|摘要、分类、检索和 Text-to-SQL 等案例。图像样例位于 multimodal。
+storm|Stanford OVAL · STORM|GitHub 仓库|https://github.com/stanford-oval/storm|多视角子问题、查询拆分、证据组织和带引用撰写。
+gptr|GPT Researcher|GitHub 仓库|https://github.com/assafelovic/gpt-researcher/blob/master/gpt_researcher/prompts.py|包含检索规划、相关内容筛选、证据摘要和研究报告。
+gemini|Google Gemini Cookbook|GitHub 仓库|https://github.com/google-gemini/cookbook/tree/main/examples|带来源研究、引用匹配、视频理解、实体提取、图像和文档理解案例。
+nano|Awesome Nano Banana 2.1 Prompts|GitHub 仓库|https://github.com/hanshs474/awesome-nano-banana-2-1-prompts|创作者分享的出图与参考照片重塑案例，可对照样图和原帖。
+frank|FrankX · Prompt Library|GitHub 仓库|https://github.com/frankxai/prompt-library/tree/main/prompts|商务邮件、学习笔记、餐食计划、营销与编程案例。包含上游导入。
+ms-course|Microsoft · Generative AI for Beginners|GitHub 仓库|https://github.com/microsoft/generative-ai-for-beginners/tree/main/06-text-generation-apps|教学案例，覆盖初稿、摘要和对话式文本生成。
+ms-base|Microsoft · Promptbase|GitHub 仓库|https://github.com/microsoft/promptbase/tree/main/guidance_programs|用于比较提示技术和结构化输出的基准示例。
+writing-app|Generative AI with LangChain · Writing Assistant|GitHub 仓库|https://github.com/benman1/generative_ai_with_langchain/blob/second_edition/writing_assistant/app.py|写作反馈应用实际使用的指令和交互。
+ms|Microsoft · Copilot Prompt Gallery|官方案例|https://enablement.microsoft.com/en-us/copilot/prompt-gallery/|会议准备与复盘、沟通、演示和协作案例。
+google|Google Workspace · Gemini Prompt Guide|官方案例|https://workspace.google.com/learning/content/gemini-prompt-guide|按工作角色提供沟通、内容和资料处理案例。
+academy|OpenAI Academy · Prompt Pack for Students|官方案例|https://academy.openai.com/en/public/clubs/higher-education-05x4z/resources/prompt-pack-for-students|学习计划、主动练习、复习和理解类模板。
+gitdocs|GitHub Docs · Copilot Cookbook|官方案例|https://docs.github.com/en/copilot/tutorials/copilot-cookbook|调试、文档、重构及测试的官方使用示例。
+midjourney|Midjourney Docs · Prompt Basics|官方案例|https://docs.midjourney.com/hc/en-us/articles/32023408776205-Prompt-Basics/|用于描述主体、媒介、环境、光线、色彩和构图的建议。
+veo|Google Cloud · Video generation prompt guide|官方案例|https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/video/video-gen-prompt-guide|面向视频生成指令的动作、风格、运镜和声音案例。
+amplitude|Amplitude · Builder Skills|GitHub 仓库|https://github.com/amplitude/builder-skills|产品访谈、需求、实验、支持反馈、分析与协作技能。
+prompt-tutorial|Anthropic · Interactive Prompt Engineering Tutorial|GitHub 仓库|https://github.com/anthropics/prompt-eng-interactive-tutorial|清晰指令、示例、结构化输出和减少错误的交互式练习。
+openai-evals|OpenAI · Evals|GitHub 仓库|https://github.com/openai/evals|样本、参考答案与评测规则的开源实现和示例。
+career-academy|OpenAI Academy · Helping Job Seekers with ChatGPT|官方案例|https://academy.openai.com/public/resources/helping-job-seekers-with-chatgpt-2025-12-03|求职材料、岗位匹配和面试准备的案例。
+ms-complaint|Microsoft Copilot · Respond to a customer complaint|官方案例|https://enablement.microsoft.com/en-us/copilot/prompt-gallery/?steps=respond-to-a-customer-complaint|根据客户投诉整理背景，拟定回应和后续动作。
+anthskills|Anthropic · Agent Skills|GitHub 仓库|https://github.com/anthropics/skills/tree/main/skills|PDF、Word、幻灯片、表格、内部沟通、品牌和网页测试工作流。
+oaiskills|OpenAI · Skills Catalog|GitHub 仓库|https://github.com/openai/skills/tree/main/skills/.curated|PDF、语音转录、网页验证、CI 和设计相关工作流；需按技能查看适用范围。
+marketing|Corey Haines · Marketing Skills|GitHub 仓库|https://github.com/coreyhaines31/marketingskills/tree/main/skills|定位、营销文案、受众研究、SEO、数据归因及商务拓展。
+superpowers|obra · Superpowers|GitHub 仓库|https://github.com/obra/superpowers/tree/main/skills|系统化调试、写计划、测试、代码评审和完成前验证。
+bmad|BMAD Method|GitHub 仓库|https://github.com/bmad-code-org/BMAD-METHOD/tree/main/skills|按角色和阶段组织的产品、工程与交付工作流。
+msagents|Microsoft · AI Agents for Beginners|GitHub 仓库|https://github.com/microsoft/ai-agents-for-beginners|工具使用、规划、基于文档检索回答和上下文管理教学。
+rasa|Rasa · Helpdesk Assistant|GitHub 仓库|https://github.com/RasaHQ/helpdesk-assistant|客服问题的分类、建单、状态查询和转人工实例。用于参考服务流程。
+dialekt|Dialekt · Language Tutor|GitHub 仓库|https://github.com/cristianodabc/dialekt|按语言等级、正式程度设定的对话学习项目。
+language-prompts|aoilang · Language Learning Prompts|GitHub 仓库|https://github.com/aoilang/language-learning-prompts|词汇故事、语音材料复习、口语游戏和分情境语言练习。
+resume|Resume Matcher|GitHub 仓库|https://github.com/srbhr/Resume-Matcher|以岗位说明调整简历和分析匹配的实际交互。
+markit|Microsoft · MarkItDown|GitHub 仓库|https://github.com/microsoft/markitdown|把 PDF、Office 文件和其他资料转成可供文本分析使用的 Markdown。
+signals-work|OpenAI Signals · ChatGPT’s expanding world of work|日志研究|https://openai.com/index/chatgpt-expanding-world-of-work/|近 100 个国家的 165 种工作活动聚合分类。涵盖教学材料、营销内容、开发和分析。
+msresearch|Microsoft Research · Working with AI|日志研究|https://www.microsoft.com/en-us/research/publication/working-with-ai-measuring-the-occupational-implications-of-generative-ai/|200,000 次 Bing Copilot 会话的任务分析，见写作、取信息、教学和建议等用途。
+fedwork|St. Louis Fed · What Work Does Generative AI Do?|人群调查|https://www.stlouisfed.org/on-the-economy/2026/sep/what-work-does-generative-ai-do|美国工人自报的具体工作任务。用来补充聊天日志中看不到的工作内采用情况。
+ai-home|OpenAI Academy · AI at Home|官方案例|https://academy.openai.com/en/public/resources/ai-at-home-2025-12-03|面向日常生活的提示与案例。
+ms-service|Microsoft Copilot for Service|官方案例|https://enablement.microsoft.com/en-us/copilot-for-service/|从客服案例和资料获取背景、协助写回复及整理服务上下文。
