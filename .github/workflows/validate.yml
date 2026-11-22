@@ -1,0 +1,50 @@
+name: Validate catalog and frontend
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Build and validate catalog data
+        run: |
+          python3 scripts/build_catalog.py
+          git diff --exit-code docs/catalog.json docs/catalog.en.json
+
+      - name: Check frontend JS syntax and DOM/i18n integrity
+        run: |
+          node --check docs/app.js
+          node --check docs/i18n.js
+          python3 - << 'PY'
+          import re
+          from pathlib import Path
+
+          html = Path("docs/index.html").read_text(encoding="utf-8")
+          app = Path("docs/app.js").read_text(encoding="utf-8")
+          i18n = Path("docs/i18n.js").read_text(encoding="utf-8")
+
+          referenced_ids = set(re.findall(r'byId\("([^"]+)"\)', app))
+          html_ids = set(re.findall(r'id="([^"]+)"', html))
+          missing_ids = referenced_ids - html_ids
+          assert not missing_ids, f"Missing DOM IDs in index.html: {missing_ids}"
+
+          for key in set(re.findall(r'data-i18n(?:-(?:label|placeholder))?="([^"]+)"', html)):
+              assert f"{key}:" in i18n, f"Missing HTML i18n key: {key}"
+          for key in set(re.findall(r"\bui\.([a-zA-Z0-9_]+)", app)):
+              assert f"{key}:" in i18n, f"Missing JS ui.{key}"
+
+          print(f"Verified {len(referenced_ids)} DOM IDs and all i18n keys.")
+          PY
